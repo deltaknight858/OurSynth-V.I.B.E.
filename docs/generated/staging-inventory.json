@@ -1,0 +1,3010 @@
+{
+  "generatedAt": "2025-09-08T21:01:07.395Z",
+  "root": "import-staging/",
+  "counts": {
+    "code": 200,
+    "svg": 12,
+    "image": 227,
+    "doc": 17,
+    "data": 71,
+    "other": 39
+  },
+  "magentaHits": [
+    "brand/oursynth/readme.md"
+  ],
+  "promoteHints": [
+    "apps/app/components/OAICommandCenterCapsuleActions.tsx",
+    "apps/app/components/wizard.types.ts",
+    "apps/app/components/WizardStepper.tsx",
+    "apps/app/wizard/page.tsx",
+    "assets/brand/motion/oai-ball.mp4",
+    "assets/brand/motion/pathways-hero.lottie.json",
+    "assets/brand/motion/wizard-reveal.lottie.json",
+    "assets/brand/static/pathways-hero.svg",
+    "assets/brand/static/wizard-reveal.svg",
+    "brand/motion/oai-ball.mp4",
+    "brand/motion/pathways-hero.lottie.json",
+    "brand/motion/wizard-reveal.lottie.json",
+    "brand/static/pathways-hero.svg",
+    "brand/static/wizard-reveal.svg",
+    "OAI.md",
+    "Studio/packages/halo-ui/src/PathwaysMain.tsx",
+    "Studio/packages/oai/src/capsule-io.ts",
+    "Studio/packages/oai/src/capsule.ts",
+    "Studio/pushable-agent-action/src/command-center/commandCenter.ts",
+    "Studio/scripts/rename-gemini-to-oai.ps1",
+    "Studio/src/components/halo/GenerateWithPathways.tsx",
+    "Studio/src/components/halo/StepWizard.tsx",
+    "Studio/src/pages/command-center-demo.tsx",
+    "Studio/src/pages/step-wizard-demo.tsx",
+    "Studio/studio/app/oai-command-center.tsx",
+    "Studio/studio/app/oai.tsx",
+    "Studio/studio/app/pathways.tsx",
+    "Studio/studio/components/wizard/DiffViewer.tsx",
+    "Studio/studio/components/wizard/PromptForm.tsx",
+    "Studio/studio/components/wizard/WizardStream.tsx",
+    "Studio/studio/lib/useOAIEvents.ts",
+    "Studio/studio/pathways/.env.local",
+    "Studio/studio/server/wizard-exec.ts",
+    "Studio/studio/test-wizard-api.http",
+    "Studio/tools/oai-wizard.ps1",
+    "Studio/tools/refactor-gemini-oai.ps1",
+    "tools/oai-wizard.ps1"
+  ],
+  "tree": [
+    {
+      "type": "file",
+      "path": "AdobeStock_1229454555 (2)-1.png"
+    },
+    {
+      "type": "dir",
+      "path": "agents"
+    },
+    {
+      "type": "dir",
+      "path": "agents/oursynth-agent"
+    },
+    {
+      "type": "file",
+      "path": "agents/oursynth-agent/index.js"
+    },
+    {
+      "type": "file",
+      "path": "agents/oursynth-agent/package.json"
+    },
+    {
+      "type": "dir",
+      "path": "apps"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/accessibility"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/accessibility/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/account"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/account/library.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/ambient"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/ambient/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/analyzer"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/analyzer/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/actions"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/actions/list.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/actions/run.ts"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/agent"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/agent/push.ts"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/ai"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/ai/chat.ts"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/export"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/export/json.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/export/zip.ts"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/marketplace"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/marketplace/orders"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/marketplace/products"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/mesh-sim"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/mesh-sim/record"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/mesh-sim/result"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/api/sandbox"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/api/sandbox/launch.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/AppThemeProvider.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/cards"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/cards/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/components"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/actions.schema.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/actions.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/AIChatInterface.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/index.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/OAICommandCenterCapsuleActions.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/OurSynthAI.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/PushableActionsPanel.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/wizard.types.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/components/WizardStepper.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/connect"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/connect/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/identity"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/identity/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/landing"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/landing/LandingPage.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/layout.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/marketplace"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/ListProduct.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/marketplace.types.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/mockProducts.ts"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/page.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/provenance.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/marketplace/[id].tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/mesh-sim"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/mesh-sim/MeshSimPanel.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/mesh-sim/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/onboarding"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/onboarding/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/orchestrator"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/orchestrator/page.tsx"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/provenance"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/provenance/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/store"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/store/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "apps/app/wizard"
+    },
+    {
+      "type": "file",
+      "path": "apps/app/wizard/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "assets"
+    },
+    {
+      "type": "dir",
+      "path": "assets/.oursynth"
+    },
+    {
+      "type": "file",
+      "path": "assets/.oursynth/actions.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/.storybook"
+    },
+    {
+      "type": "file",
+      "path": "assets/.storybook/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/apps"
+    },
+    {
+      "type": "dir",
+      "path": "assets/apps/studio"
+    },
+    {
+      "type": "file",
+      "path": "assets/apps/studio/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/apps/studio/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/apps/studio/verification-reports"
+    },
+    {
+      "type": "file",
+      "path": "assets/apps/studio/verification-reports/jest-results.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/apps/studio/verification-reports/static-verification-report.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/apps/studio/verification-reports/verification-report.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/brand"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/brand-manifest.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/brand/cards"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/cards/card-config.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/cards/card.png"
+    },
+    {
+      "type": "dir",
+      "path": "assets/brand/identity"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/identity/ai-avatar.mp4"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/identity/logo.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/identity/oursynth.logo.svg"
+    },
+    {
+      "type": "dir",
+      "path": "assets/brand/motion"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/glow-pulse-hover.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/motion-config.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/oai-ball.mp4"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/particles-bg.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/pathways-hero.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/motion/wizard-reveal.lottie.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/brand/static"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/static/glow-pulse-hover.svg"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/static/particles-bg.svg"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/static/pathways-hero.svg"
+    },
+    {
+      "type": "file",
+      "path": "assets/brand/static/wizard-reveal.svg"
+    },
+    {
+      "type": "file",
+      "path": "assets/package.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/analyzer"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/analyzer/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/analyzer/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/capsule"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/capsule/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/capsule/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/halo-ui"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/halo-ui/config"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/halo-ui/config/brandConfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/mesh"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/mesh/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/mesh/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/orchestrator"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/orchestrator/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/orchestrator/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/shared-types"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/shared-types/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/shared-types/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/storybook"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/storybook/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/studio"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/studio/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/ui"
+    },
+    {
+      "type": "dir",
+      "path": "assets/packages/ui/components"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/ui/components/OurSynthAgentBall.svg"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/ui/package.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/packages/ui/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/scripts"
+    },
+    {
+      "type": "file",
+      "path": "assets/scripts/commit-brand-config.package.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/tools"
+    },
+    {
+      "type": "file",
+      "path": "assets/tools/alias.config.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/tools/generated"
+    },
+    {
+      "type": "file",
+      "path": "assets/tools/generated/alias-report.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/tools/generated/tsconfig.paths.generated.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/tsconfig.base.json"
+    },
+    {
+      "type": "file",
+      "path": "assets/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "assets/vanillacomponents"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0000s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0000s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0000s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0000_Dropdown-Menu.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0001_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0002_Polygon-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0003_Products-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0004_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0005_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0006_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0007_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000s_0008_Ellipse-1-copy-16.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0000_VANILLA-CREAM-UI-KIT-Freebie-Pack-for-bestpsdfreebies.com.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0000s_0000_3K-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0000s_0001_f-copy.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0000s_0002_Share.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0000_Share.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0001_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0002_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0003_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0004_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0005_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0006_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0007_Rounded-Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0008_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0001s_0009_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0000_Audio-player-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0001_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0002_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0003_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0004_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0005_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0006_3-Doors-Down-–-Superman.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0007_3_54.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0008_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0009_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0010_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0002s_0011_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000s_0000_Subscribe-Now.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000s_0001_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000s_0003_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000s_0004_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0000_Sign-in.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0001s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0001s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0001s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0001_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002s_0002_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002s_0003_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002s_0004_Remember-Me_.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0003s_0000_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0003s_0001_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0003s_0002_Password.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0003s_0003_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0003s_0004_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0004s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0004s_0001_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0004s_0002_Email.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0004s_0003_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0003s_0004s_0004_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0000_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0002_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0004_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0005_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0006_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0007_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0008_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0009_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0010_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0011_Balance.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0004s_0012_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0000s_0000_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0000s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0000s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0004_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0005_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0006_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0007_Volume.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0005s_0008_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000s_0000_arrow.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000s_0001_settings-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000s_0002_Options.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000s_0003_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000s_0004_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0000_Dropdown-Menu.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0001_chat-bubble.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0002_spanner.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0003_heart.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0004_house.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0005_email.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0006_Сonversation.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0007_Settings.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0008_Like.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0009_Home.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0010_Messages.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0011_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0012_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0013_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0014_Shape--copy.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0015_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0016_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0006s_0017_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0000s_0000_check-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0000s_0001_check--.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0000s_0002_Rounded-Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0000s_0003_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0001s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0001s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0001s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000s_0001s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0000_Checkbox-ON-_-OFF.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0001s_0000_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0001s_0001_Rounded-Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0001s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0007s_0001s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0000s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0000s_0001_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0000s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0000s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0000_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0001s_0000_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0001s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0001s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0001s_0003_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0001_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0002s_0000_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0002s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0002s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0002s_0003_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000s_0002_check-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0000_Selector.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0000_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0001_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0002_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0003_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0004_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0005_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0006_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0007_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0008_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0009_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0010_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0011_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0008s_0001s_0012_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0000_10-December-2012.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0001_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0002_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0003_texture.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0004_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0005_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0006_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0007_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0008_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0009_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0010_texture-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0011_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0012_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0013_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000s_0014_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0000_Ribbons.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0000_10-December-2012.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0001_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0002_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0003_texture.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0004_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0005_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0006_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0007_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0008_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0009_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0010_texture.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0011_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0012_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0013_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001s_0014_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0001_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0000_10-December-2012.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0001_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0002_Layer.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0003_texture.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0004_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0005_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0006_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0007_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0008_Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0009_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0010_texture-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0011_Rectangle.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0012_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0013_Shape.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002s_0014_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0009s_0002_Shadow.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0000s_0000_Layer-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0000s_0001_Rounded-Rectangle-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0000s_0002_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0000_Tabs.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0001s_0000_3.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0001s_0001_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0001_Events.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0002_He-made-his-film-debut-with-a-minor-part-in-Back-to-the-Future-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0003_10-august-2012.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0004_Shape-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0005_Ellipse.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0006_Archive.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0007_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0008_Starred.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0009_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0010_Reminders.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0011_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000s_0010s_0012_Ellipse-.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000_BG.png"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0000_BG_tmp26803"
+    },
+    {
+      "type": "file",
+      "path": "assets/vanillacomponents/vanilla_cream_ui_kit_0001_Background.png"
+    },
+    {
+      "type": "dir",
+      "path": "brand"
+    },
+    {
+      "type": "file",
+      "path": "brand/brand-manifest.json"
+    },
+    {
+      "type": "dir",
+      "path": "brand/cards"
+    },
+    {
+      "type": "file",
+      "path": "brand/cards/card-config.json"
+    },
+    {
+      "type": "file",
+      "path": "brand/cards/card.png"
+    },
+    {
+      "type": "dir",
+      "path": "brand/identity"
+    },
+    {
+      "type": "file",
+      "path": "brand/identity/ai-avatar.mp4"
+    },
+    {
+      "type": "file",
+      "path": "brand/identity/logo.png"
+    },
+    {
+      "type": "file",
+      "path": "brand/identity/oursynth.logo.svg"
+    },
+    {
+      "type": "dir",
+      "path": "brand/motion"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/glow-pulse-hover.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/motion-config.json"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/oai-ball.mp4"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/particles-bg.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/pathways-hero.lottie.json"
+    },
+    {
+      "type": "file",
+      "path": "brand/motion/wizard-reveal.lottie.json"
+    },
+    {
+      "type": "dir",
+      "path": "brand/oursynth"
+    },
+    {
+      "type": "file",
+      "path": "brand/oursynth/readme.md"
+    },
+    {
+      "type": "file",
+      "path": "brand/README.md"
+    },
+    {
+      "type": "dir",
+      "path": "brand/static"
+    },
+    {
+      "type": "file",
+      "path": "brand/static/glow-pulse-hover.svg"
+    },
+    {
+      "type": "file",
+      "path": "brand/static/particles-bg.svg"
+    },
+    {
+      "type": "file",
+      "path": "brand/static/pathways-hero.svg"
+    },
+    {
+      "type": "file",
+      "path": "brand/static/wizard-reveal.svg"
+    },
+    {
+      "type": "dir",
+      "path": "components"
+    },
+    {
+      "type": "file",
+      "path": "components/CinematicFlow.d.ts"
+    },
+    {
+      "type": "file",
+      "path": "components/CinematicFlow.js"
+    },
+    {
+      "type": "file",
+      "path": "components/ParticleField.js"
+    },
+    {
+      "type": "file",
+      "path": "components/SharedCard.d.ts"
+    },
+    {
+      "type": "dir",
+      "path": "instructions"
+    },
+    {
+      "type": "file",
+      "path": "instructions/copilotinstructionsfornicepage.instructions.md"
+    },
+    {
+      "type": "file",
+      "path": "instructions/track-brandmotion.instructions.md"
+    },
+    {
+      "type": "file",
+      "path": "logo.svg"
+    },
+    {
+      "type": "file",
+      "path": "OAI.md"
+    },
+    {
+      "type": "file",
+      "path": "prompts.md"
+    },
+    {
+      "type": "file",
+      "path": "ReadMe copy.md"
+    },
+    {
+      "type": "file",
+      "path": "README.md"
+    },
+    {
+      "type": "dir",
+      "path": "src"
+    },
+    {
+      "type": "file",
+      "path": "src/AuthStatus.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "src/theme"
+    },
+    {
+      "type": "file",
+      "path": "src/theme/theme.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/.oursynth"
+    },
+    {
+      "type": "file",
+      "path": "Studio/.oursynth/actions.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/.oursynth/actions.schema.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/.studio"
+    },
+    {
+      "type": "file",
+      "path": "Studio/.studio/journal.ndjson"
+    },
+    {
+      "type": "file",
+      "path": "Studio/.studio/registry.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/infra"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/infra/deploy"
+    },
+    {
+      "type": "file",
+      "path": "Studio/infra/deploy/Gemini.md"
+    },
+    {
+      "type": "file",
+      "path": "Studio/infra/deploy/Germini.md"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/capsule"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/capsule/src"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/capsule/src/manifest.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/capsule/src/meshSimResult.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/declarations.d.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/.bin"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/node_modules/.package-lock.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/@types"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/clsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/csstype"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/js-tokens"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/loose-envify"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/react"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/react-dom"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/scheduler"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/typescript"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/node_modules/zustand"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/package-lock.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/QUICKGUIDE.md"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/data"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/feedback"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/src/HaloUIDemoApp.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/src/HaloUIDemoGallery.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/src/HaloUIShowcase.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/src/index.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/layout"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/pathways"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/src/PathwaysMain.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/system"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/halo-ui/src/tokens"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/halo-ui/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/oai"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/oai/src"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/oai/src/capsule-io.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/oai/src/capsule.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/packages/types"
+    },
+    {
+      "type": "file",
+      "path": "Studio/packages/types/capsule.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/README.md"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action/scripts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/scripts/push-agent-action.ps1"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action/src"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action/src/agent"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/src/agent/agent.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action/src/command-center"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/src/command-center/commandCenter.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/pushable-agent-action/src/types"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/src/types/index.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/pushable-agent-action/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/scripts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/capture-provenance.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/clean-build.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/generate-actions-types.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/generate-registry.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/health-check.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/mesh-sim-provenance-and-preview.ps1"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/rename-deploy-to-connect.ps1"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/rename-gemini-to-oai.ps1"
+    },
+    {
+      "type": "file",
+      "path": "Studio/scripts/validate-actions-schema.mjs"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/sentient-developer"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/CodeGenerationService.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/DeploymentService.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/eslint.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/index.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/middleware.js"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/sentient-developer/node_modules"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/sentient-developer/node_modules/express"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/node_modules/express/History.md"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/node_modules/express/index.js"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/sentient-developer/node_modules/express/lib"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/node_modules/express/LICENSE"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/node_modules/express/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/node_modules/express/Readme.md"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/services.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/sentient-developer/TestingService.js"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/components"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/components/halo"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/ApiKeyInput.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/ChatInterface.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/CommandCenter.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/GenerateWithPathways.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/GlobalBottomNavBar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloAlert.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloAvatar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloBadge.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloButton.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloCard.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloCheckbox.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloDialog.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloErrorBoundary.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloErrorBoundaryProvider.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloInput.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloProgress.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloSelect.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloSlider.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloSpinner.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloTabs.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloTextarea.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloToggle.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/HaloTooltip.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/index.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/PromptInput.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/StepWizard.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/ThemeScript.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/halo/ThemeToggle.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/components/layout"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/layout/ThemeLayout.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/components/ui"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/accordion.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/alert-dialog.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/alert.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/aspect-ratio.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/avatar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/badge.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/breadcrumb.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/button.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/calendar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/card.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/carousel.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/checkbox.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/collapsible.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/command.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/context-menu.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/dialog.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/drawer.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/dropdown-menu.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/form.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/hover-card.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/input-otp.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/input.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/label.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/menubar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/navigation-menu.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/pagination.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/popover.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/progress.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/radio-group.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/resizable.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/scroll-area.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/select.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/separator.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/sheet.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/sidebar.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/skeleton.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/slider.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/sonner.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/switch.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/table.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/tabs.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/textarea.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/toast.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/toaster.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/toggle-group.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/toggle.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/components/ui/tooltip.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/contexts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/contexts/ThemeContext.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/hooks"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/hooks/use-mobile.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/hooks/use-toast.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/hooks/useCommandCenter.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/hooks/useErrorBoundary.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/lib"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/lib/commandRegistry.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/lib/utils.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/pages"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/404.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/pages/api"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/api/hello.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/chat-interface-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/command-center-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/error-boundary-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/example.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/pages/fonts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/fonts/GeistMonoVF.woff"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/fonts/GeistVF.woff"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/global-bottom-navbar-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/index.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/prompt-input-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/step-wizard-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/toast-demo.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/_app.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/pages/_document.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/src/styles"
+    },
+    {
+      "type": "file",
+      "path": "Studio/src/styles/globals.css"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/account.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/api"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/api/health-check"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/api/mesh-sim"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/api/wizard"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/deploy.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/domains.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/Gemini.md.prompt.md"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/layout.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/oai-command-center.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/oai.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/page.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/pathways.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/store"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/store/[slug].tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/store.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/app/studio"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/studio/layout.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/app/studio/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/components"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/ChatPanel.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/HealthCheckPanel.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/TimeMachine.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/components/wizard"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/wizard/DiffViewer.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/wizard/PromptForm.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/components/wizard/WizardStream.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/.eslintrc.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/.gitignore"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/.prettierrc"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/capsule"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/capsule/route.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/components.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/create"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/create/route.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/ecosystem.config.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/next.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/package-lock.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/page.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/pages"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/pages/index.tsx"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/postcss.config.mjs"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/public"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/public/favicon.ico"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/README.md"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/components"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/hooks"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/integrations"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/lib"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/pages"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/src/styles"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/deploy/status"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/status/route.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/tailwind.config"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/tailwind.config.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/tsconfig.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/deploy/vercel.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/domains"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/.gitignore"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/.prettierrc.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/components.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/ecosystem.config.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/eslint.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/jest.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/jest.setup.js"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/next.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/package-lock.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/package.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/postcss.config.mjs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/README.md"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/tailwind.config.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/tsconfig.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/domains/vercel.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/lib"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/lib/useOAIEvents.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/pathways"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/pathways/.env.local"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/scripts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/scripts/test-with-dev.ps1"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/scripts/test-with-dev.sh"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/server"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/server/wizard-exec.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/src"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/src/features"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/src/features/oai"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/src/features/provenance"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/src/jobs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/src/jobs/runner.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/src/jobs/store.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/test-wizard-api.http"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/studio/tests"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/tests/halo-scrollbar.spec.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/tests/mesh-sim-provenance.spec.ts"
+    },
+    {
+      "type": "file",
+      "path": "Studio/studio/tsconfig.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/tests"
+    },
+    {
+      "type": "file",
+      "path": "Studio/tests/hello-world.spec.ts"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/tools"
+    },
+    {
+      "type": "file",
+      "path": "Studio/tools/oai-wizard.ps1"
+    },
+    {
+      "type": "file",
+      "path": "Studio/tools/refactor-gemini-oai.ps1"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/vs"
+    },
+    {
+      "type": "file",
+      "path": "Studio/vs/launch.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/vs/settings.json"
+    },
+    {
+      "type": "file",
+      "path": "Studio/vs/tasks.json"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web/app"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web/app/api"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web/app/api/capsule"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web/components"
+    },
+    {
+      "type": "dir",
+      "path": "Studio/web/components/Capsule"
+    },
+    {
+      "type": "file",
+      "path": "Studio/web/components/Capsule/TimeMachine.tsx"
+    },
+    {
+      "type": "dir",
+      "path": "tools"
+    },
+    {
+      "type": "file",
+      "path": "tools/oai-wizard.ps1"
+    }
+  ],
+  "diff": {
+    "newFiles": [],
+    "removedFiles": [
+      "apps/app/capsule/page.tsx",
+      "apps/app/capsule/TimeMachinePanel.tsx",
+      "apps/app/command-center/layout.tsx",
+      "apps/app/command-center/page.tsx",
+      "apps/app/pathways/capsuleExport.ts",
+      "apps/app/pathways/CapsuleExportButton.tsx",
+      "apps/app/pathways/MyProjectsDialog.tsx",
+      "apps/app/pathways/page.tsx",
+      "apps/app/pathways/PathwaysWizard.tsx",
+      "src/authContext.tsx",
+      "src/features/oai/AgentBallDemo.tsx",
+      "src/features/oai/AgentChat.tsx",
+      "src/features/oai/AgentPushPanel.tsx",
+      "src/features/oai/CommandCenter.tsx",
+      "src/supabaseClient.ts"
+    ],
+    "newCount": 0,
+    "removedCount": 15
+  }
+}

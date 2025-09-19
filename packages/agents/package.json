@@ -1,0 +1,49 @@
+{
+  "name": "@oursynth/agents",
+  "version": "1.0.0",
+  "description": "Composable agent factories and utilities for OurSynth ecosystem",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "test": "jest"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md"
+  ],
+  "dependencies": {
+    "@oursynth/agent-runtime": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.9.0"
+  },
+  "keywords": [
+    "agents",
+    "automation",
+    "oursynth",
+    "marketplace",
+    "monetization",
+    "brand",
+    "release"
+  ],
+  "author": "OurSynth Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deltaknight858/OurSynth.git",
+    "directory": "packages/agents"
+  },
+  "bugs": {
+    "url": "https://github.com/deltaknight858/OurSynth/issues"
+  },
+  "homepage": "https://github.com/deltaknight858/OurSynth#readme"
+}

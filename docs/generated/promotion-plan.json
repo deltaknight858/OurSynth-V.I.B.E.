@@ -1,0 +1,83 @@
+{
+  "generatedAt": "2025-09-08T20:34:31.995Z",
+  "mode": "execute",
+  "phase": "1",
+  "promoteCount": 15,
+  "entries": [
+    {
+      "item": "import-staging/apps/app/pathways/capsuleExport.ts",
+      "classification": "PROMOTE",
+      "destination": "components/wizard/capsuleExport.ts"
+    },
+    {
+      "item": "import-staging/apps/app/pathways/CapsuleExportButton.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/wizard/CapsuleExportButton.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/pathways/MyProjectsDialog.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/wizard/MyProjectsDialog.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/pathways/page.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/wizard/page.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/pathways/PathwaysWizard.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/wizard/PathwaysWizard.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/command-center/layout.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/command-center/layout.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/command-center/page.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/command-center/page.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/capsule/page.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/capsules/page.tsx"
+    },
+    {
+      "item": "import-staging/apps/app/capsule/TimeMachinePanel.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/capsules/TimeMachinePanel.tsx"
+    },
+    {
+      "item": "import-staging/src/features/oai/AgentBallDemo.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/ai/AgentBallDemo.tsx"
+    },
+    {
+      "item": "import-staging/src/features/oai/AgentChat.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/ai/AgentChat.tsx"
+    },
+    {
+      "item": "import-staging/src/features/oai/AgentPushPanel.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/ai/AgentPushPanel.tsx"
+    },
+    {
+      "item": "import-staging/src/features/oai/CommandCenter.tsx",
+      "classification": "PROMOTE",
+      "destination": "components/ai/CommandCenter.tsx"
+    },
+    {
+      "item": "import-staging/src/authContext.tsx",
+      "classification": "PROMOTE",
+      "destination": "lib/auth/auth-context.tsx"
+    },
+    {
+      "item": "import-staging/src/supabaseClient.ts",
+      "classification": "PROMOTE",
+      "destination": "lib/integrations/supabase.ts"
+    }
+  ]
+}

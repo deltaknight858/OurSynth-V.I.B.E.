@@ -1,0 +1,14 @@
+{
+  "name": "sentient-developer",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "tsc:noEmit": "echo 'No TypeScript in sentient-developer (Node.js app)'",
+    "lint": "echo 'No lint configured for sentient-developer'"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

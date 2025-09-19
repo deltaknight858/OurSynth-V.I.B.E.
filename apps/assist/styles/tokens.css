@@ -1,0 +1,2 @@
+/* Temporary: import tokens directly from local dist */
+@import '../../../packages/core/dist/tokens.css';

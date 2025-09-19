@@ -1,0 +1,111 @@
+.shellRoot {
+  background: var(--color-bg);
+  color: var(--color-text);
+  min-height: 100vh;
+}
+
+.topbar {
+  background: var(--color-surface);
+  box-shadow: var(--shadow-elev-1);
+  padding: var(--spacing-4);
+}
+
+.topbarContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-weight: bold;
+  font-size: var(--font-size-lg);
+  color: var(--color-brand);
+}
+
+.topnav {
+  display: flex;
+  gap: var(--spacing-2);
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-elev-2);
+  padding: var(--spacing-3);
+  min-height: calc(100vh - 64px);
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.sidebarLink {
+  color: var(--color-text-muted);
+  padding: var(--spacing-2);
+  border-radius: var(--radius-md);
+  text-decoration: none;
+}
+
+.main {
+  flex: 1;
+  padding: var(--spacing-4);
+}
+
+.logo {
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.icon {
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 6px;
+}
+
+.aetherMindmap {
+  max-width: 100%;
+  margin: 2rem 0;
+}
+
+.aetherGraph {
+  border: 2px dashed #7C4DFF;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--color-surface);
+}
+
+.aetherRecipeList {
+  margin-top: 2rem;
+}
+
+.wizardContainer {
+  border: 2px dashed #00F5FF;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--color-surface);
+  margin-top: 2rem;
+}
+
+.wizardFileInput {
+  margin-bottom: 1rem;
+}
+
+.wizardProgress {
+  margin-top: 1rem;
+}
+
+.capsuleValidateBtn {
+  margin-top: 1rem;
+}
+
+.capsuleStatus {
+  margin-left: 1rem;
+  color: #7C4DFF;
+}

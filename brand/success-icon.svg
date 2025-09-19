@@ -1,0 +1,5 @@
+<!-- Success: Neon checkmark -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#00FFE0" stroke-width="2"/>
+  <polyline points="10,17 15,22 22,11" fill="none" stroke="#00FFE0" stroke-width="2"/>
+</svg>

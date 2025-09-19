@@ -1,0 +1,8 @@
+{
+  "motion.duration.fast": "120ms",
+  "motion.duration.base": "220ms",
+  "motion.duration.slow": "420ms",
+  "motion.easing.standard": "cubic-bezier(.4,.2,.1,1)",
+  "motion.easing.bounce": "cubic-bezier(.34,1.56,.64,1)",
+  "motion.keyframes.glowPulse": "@keyframes glowPulse {0%,100%{opacity:.55}50%{opacity:1}}"
+}

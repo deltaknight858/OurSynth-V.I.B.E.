@@ -1,0 +1,55 @@
+'use client'
+
+import React from 'react';
+import { TemplateSelector } from '@/templates';
+import styled from 'styled-components';
+
+const PageContainer = styled.div`
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+`;
+
+const TemplatesContainer = styled.div`
+  padding: 32px 0;
+`;
+
+const Header = styled.div`
+  background: var(--glass-background, rgba(255, 255, 255, 0.1));
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+`;
+
+const Title = styled.h1`
+  background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+`;
+
+const Subtitle = styled.p`
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
+`;
+
+export default function TemplatesPage() {
+  return (
+    <PageContainer>
+      <Header>
+        <Title>Project Templates</Title>
+        <Subtitle>Choose a template to get started quickly</Subtitle>
+      </Header>
+      <TemplatesContainer>
+        <TemplateSelector />
+      </TemplatesContainer>
+    </PageContainer>
+  );
+}

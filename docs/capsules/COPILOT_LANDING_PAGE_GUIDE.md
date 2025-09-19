@@ -1,0 +1,3 @@
+# Copilot Guide: OurSynth Core Landing Page
+
+... (content from your prompt above, unchanged for brevity) ...

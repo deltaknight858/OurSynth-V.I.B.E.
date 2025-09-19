@@ -1,0 +1,110 @@
+.main {
+  padding: 32px;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  background: transparent;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 48px;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 24px;
+  border: 1px solid rgba(132, 255, 99, 0.1);
+}
+
+.quickNav {
+  margin-top: 32px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 16px;
+  border: 1px solid rgba(170, 99, 255, 0.2);
+}
+
+.quickNav h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.quickLinks {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.quickLinks a {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 12px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer {
+  margin-top: 64px;
+  padding: 32px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  border: 1px solid rgba(132, 255, 99, 0.1);
+}
+
+.stats {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.stats > div {
+  padding: 16px 24px;
+  border-radius: 12px;
+  font-weight: 600;
+  min-width: 200px;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: var(--electric-purple);
+  text-shadow: 
+    0 0 10px rgba(160, 32, 240, 0.4),
+    0 0 20px rgba(160, 32, 240, 0.2);
+  text-align: center;
+  background: linear-gradient(135deg, var(--electric-purple), var(--winter-cyan));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  text-align: center;
+  color: var(--royal-purple);
+  font-weight: 500;
+  text-shadow: 0 0 8px rgba(160, 32, 240, 0.2);
+}
+
+.divider {
+  margin: 48px 0;
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--electric-purple), 
+    var(--winter-cyan), 
+    var(--electric-purple), 
+    transparent
+  );
+  border-radius: 2px;
+  box-shadow: 0 0 10px rgba(160, 32, 240, 0.3);
+}

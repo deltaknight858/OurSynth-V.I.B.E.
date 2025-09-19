@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <circle cx="24" cy="24" r="22" fill="#7C4DFF" stroke="#FFFFFF" stroke-width="4"/>
+  <rect x="12" y="12" width="24" height="24" rx="8" fill="#A3A3B0" />
+  <text x="24" y="30" text-anchor="middle" font-size="18" fill="#FFFFFF" font-family="Inter, Arial, sans-serif">OS</text>
+</svg>

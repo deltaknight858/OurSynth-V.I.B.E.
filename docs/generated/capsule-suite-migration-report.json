@@ -1,0 +1,104 @@
+{
+  "source": "c:\\Users\\davos\\Downloads\\capsule-wizard-landing-studio-store-web",
+  "report": [
+    {
+      "from": "packages\\capsule",
+      "to": "packages\\capsule",
+      "note": "Will publish as @oursynth/capsule",
+      "copied": true
+    },
+    {
+      "from": "packages\\mesh-node",
+      "to": "packages\\mesh-node",
+      "note": "Mesh node utilities",
+      "copied": true
+    },
+    {
+      "from": "packages\\oai",
+      "to": "packages\\oai",
+      "note": "OAI tools (capsule tools)",
+      "copied": true
+    },
+    {
+      "from": "apps\\studio\\components",
+      "to": "packages\\core\\src\\components\\capsules",
+      "note": "Studio Capsule components into core library",
+      "copied": true
+    },
+    {
+      "from": "apps\\web\\components\\store",
+      "to": "packages\\core\\src\\components\\store",
+      "note": "Store components into core library",
+      "copied": true
+    },
+    {
+      "from": "apps\\web\\components\\wizard",
+      "to": "packages\\core\\src\\components\\wizard",
+      "note": "Wizard components into core library",
+      "copied": true
+    },
+    {
+      "from": "apps\\deploy\\pages\\api\\deploy",
+      "to": "apps\\assist\\app\\_migrations\\capsule-deploy",
+      "note": "Stage API route for conversion to app router",
+      "copied": true
+    },
+    {
+      "from": "assets\\css",
+      "to": "apps\\assist\\styles\\capsule-suite",
+      "note": "Landing CSS and related styles",
+      "copied": true
+    },
+    {
+      "from": ".github\\instructions",
+      "to": "docs\\capsules\\.github-instructions",
+      "note": "Historic instructions",
+      "copied": true
+    },
+    {
+      "from": "BRANDING_GUIDE.md",
+      "to": "docs\\capsules\\BRANDING_GUIDE.md",
+      "copied": true
+    },
+    {
+      "from": "COPILOT_INSTRUCTIONS.md",
+      "to": "docs\\capsules\\COPILOT_INSTRUCTIONS.md",
+      "copied": true
+    },
+    {
+      "from": "COPILOT_LANDING_PAGE_GUIDE.md",
+      "to": "docs\\capsules\\COPILOT_LANDING_PAGE_GUIDE.md",
+      "copied": true
+    },
+    {
+      "from": "GEMINI_INSTRUCTIONS.md",
+      "to": "docs\\capsules\\GEMINI_INSTRUCTIONS.md",
+      "copied": true
+    },
+    {
+      "from": "ICON-CHECKLIST.md",
+      "to": "docs\\capsules\\ICON-CHECKLIST.md",
+      "copied": true
+    },
+    {
+      "from": "README.md",
+      "to": "docs\\capsules\\README.md",
+      "copied": true
+    },
+    {
+      "from": "WIZARD_CAPSULE.md",
+      "to": "docs\\capsules\\WIZARD_CAPSULE.md",
+      "copied": true
+    },
+    {
+      "from": "index.html",
+      "to": "docs\\capsules\\examples\\root-index.html",
+      "copied": true
+    },
+    {
+      "from": "pages/index.html",
+      "to": "docs\\capsules\\examples\\pages-index.html",
+      "copied": true
+    }
+  ]
+}

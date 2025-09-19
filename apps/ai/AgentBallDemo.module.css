@@ -1,0 +1,24 @@
+.card {
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-md);
+}
+.title {
+  margin: 0 0 var(--space-md) 0;
+  font-size: 18px;
+  color: var(--fg);
+}
+.spacer {
+  margin: var(--space-lg) 0;
+}
+.desc {
+  margin: 0;
+  color: var(--muted);
+  text-align: center;
+  max-width: 520px;
+}

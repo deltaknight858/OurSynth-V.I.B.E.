@@ -1,0 +1,5 @@
+<!-- Preview: Neon eye or monitor -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <ellipse cx="16" cy="16" rx="12" ry="8" fill="none" stroke="#00FFE0" stroke-width="2"/>
+  <circle cx="16" cy="16" r="3" fill="#00FFE0"/>
+</svg>

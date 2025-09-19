@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  gap: 2rem;
+}
+
+.sidebar {
+  min-width: 220px;
+}
+
+.main {
+  flex: 1;
+}
+
+.agentsOverview {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  max-height: 600px;
+  overflow: auto;
+}
+
+.preWrap {
+  white-space: pre-wrap;
+  font-family: inherit;
+}

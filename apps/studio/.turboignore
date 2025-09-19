@@ -1,0 +1,11 @@
+node_modules
+.git
+.next
+.turbo
+dist
+build
+*.log
+.env*
+coverage
+.nyc_output
+.cache

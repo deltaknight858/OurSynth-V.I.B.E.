@@ -1,0 +1,27 @@
+:root {
+  --color-brand: #7C4DFF;
+  --color-bg: #0B0B10;
+  --color-surface: #12121A;
+  --color-text: #FFFFFF;
+  --color-text-muted: #A3A3B0;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-elev-1: 0 4px 16px rgba(0,0,0,0.35);
+  --shadow-elev-2: 0 10px 30px rgba(0,0,0,0.45);
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --font-size-sm: 12px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

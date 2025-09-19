@@ -1,0 +1,15 @@
+{
+  "name": "@oursynth/shared-config",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "tsc:noEmit": "echo 'No TypeScript in shared-config (JavaScript package)'",
+    "lint": "echo 'No lint configured for shared-config package'"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {}
+}

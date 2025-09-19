@@ -1,0 +1,32 @@
+{
+  "name": "@oursynth/core",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "exports": {
+  "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./components/*": "./dist/components/*",
+    "./icons/*": "./dist/icons/*",
+    "./state/*": "./dist/state/*",
+    "./tokens": "./dist/tokens.css"
+  },
+  "scripts": {
+  "build": "tsup src/index.ts --dts --format esm,cjs --splitting false --clean && node ../../scripts/build_tokens.mjs"
+  },
+  "sideEffects": false,
+  "dependencies": {},
+  "peerDependencies": {
+    "react": ">=18"
+  }
+}

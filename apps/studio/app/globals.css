@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Studio-specific styles */
+.workspace-shell {
+  @apply min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-800;
+}
+
+.workspace-content {
+  @apply flex h-screen;
+}
+
+.left-nav {
+  @apply w-64 bg-white dark:bg-slate-800 border-r border-slate-200 dark:border-slate-700 flex flex-col;
+}
+
+.left-nav ul {
+  @apply flex-1 p-4 space-y-2;
+}
+
+.left-nav li {
+  @apply rounded-lg transition-colors;
+}
+
+.left-nav li.active {
+  @apply bg-blue-50 dark:bg-blue-900/20;
+}
+
+.left-nav button {
+  @apply w-full flex items-center gap-3 p-3 text-left rounded-lg hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors;
+}
+
+.left-nav li.active button {
+  @apply text-blue-600 dark:text-blue-400;
+}
+
+.feature-panel {
+  @apply flex-1 p-6 overflow-auto;
+}
+
+.panel-container {
+  @apply max-w-7xl mx-auto;
+}
+
+.panel-header {
+  @apply mb-6;
+}
+
+.panel-title {
+  @apply text-2xl font-semibold text-slate-900 dark:text-slate-100;
+}
+
+.panel-description {
+  @apply text-slate-600 dark:text-slate-400 mt-1;
+}

@@ -1,0 +1,5 @@
+<!-- History: Neon timeline or clock -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <circle cx="16" cy="16" r="12" fill="none" stroke="#00FFE0" stroke-width="2"/>
+  <path d="M16 10v6l5 5" stroke="#00FFE0" stroke-width="2"/>
+</svg>

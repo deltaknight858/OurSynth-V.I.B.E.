@@ -1,0 +1,8 @@
+/** Auto-generated from primitive-button-rise.svg. DO NOT EDIT DIRECTLY. */
+import * as React from 'react';
+export interface IconProps extends React.SVGProps<SVGSVGElement> { size?: number; title?: string; }
+export const PrimitiveButtonRise: React.FC<IconProps> = ({ size = 24, title = 'PrimitiveButtonRise', ...props }) => (
+  <svg role="img" width={size} height={size} aria-label={title} viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="rise-surface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1320"/><stop offset="1" stop-color="#0A0F1A"/></linearGradient><linearGradient id="rise-stroke" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9AF0FF"/><stop offset="1" stop-color="#C19BFF"/></linearGradient><filter id="shadow" x="-50%" y="-50%" width="200%" height="200%"><feOffset dy="6"/><feGaussianBlur stdDeviation="8"/><feColorMatrix type="matrix" values="0 0 0 0 0.32  0 0 0 0 0.62  0 0 0 0 1  0 0 0 0.35 0"/><feBlend mode="normal" in2="SourceGraphic" result="drop"/></filter></defs><!--Base with elevated shadow--><g filter="url(#shadow)"><rect x="4" y="4" width="212" height="52" rx="16" fill="currentColor" stroke="url(#rise-stroke)" stroke-width="2"/></g><!--Bottom rim highlight to imply lift--><rect x="8" y="40" width="204" height="12" rx="6" fill="currentColor" opacity="0.06"/><text x="110" y="39" fill="currentColor" font-size="16" font-family="Inter, ui-sans-serif, system-ui" text-anchor="middle">
+    Continue
+  </text></svg>
+);

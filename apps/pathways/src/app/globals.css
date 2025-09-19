@@ -1,0 +1,53 @@
+
+
+/* Minimal global CSS: resets, font smoothing, and animated backgrounds */
+html {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+}
+
+body::before {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background:
+		radial-gradient(circle at 15% 85%, rgba(160,32,240,0.12) 0%, transparent 60%),
+		radial-gradient(circle at 85% 15%, rgba(16,185,129,0.08) 0%, transparent 60%),
+		radial-gradient(circle at 50% 50%, rgba(0,255,204,0.06) 0%, transparent 70%);
+	z-index: -2;
+	animation: oursynth-pulse 18s ease-in-out infinite;
+}
+
+body::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	background:
+		linear-gradient(90deg, transparent 0%, rgba(16,185,129,0.03) 50%, transparent 100%),
+		linear-gradient(180deg, transparent 0%, rgba(160,32,240,0.04) 50%, transparent 100%);
+	z-index: -1;
+	animation: oursynth-flow 25s linear infinite;
+}
+
+@keyframes oursynth-pulse {
+	0%, 100% {
+		transform: scale(1) rotate(0deg);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.05) rotate(0.5deg);
+		opacity: 0.8;
+	}
+}
+
+@keyframes oursynth-flow {
+	0%   { transform: translateY(-100%); }
+	100% { transform: translateY(100%);   }
+}

@@ -1,0 +1,55 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build wizard-capsule",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build:wizard-capsule"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build wizard-capsule",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build:wizard-capsule"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		},
+		{
+			"label": "build wizard-capsule+install d3",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"--workspace",
+				"@oursynth/wizard-capsule",
+				"install"
+			],
+			"group": "build"
+		},
+		{
+			"label": "install d3 + build wizard-capsule",
+			"type": "shell",
+			"command": "npm",
+			"args": [
+				"run",
+				"build:wizard-capsule"
+			],
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build"
+		}
+	]
+}

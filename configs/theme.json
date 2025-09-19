@@ -1,0 +1,6 @@
+{
+  "modes": ["dark", "light"],
+  "default": "dark",
+  "animation": "gradient-sweep",
+  "tokenRefs": ["colors", "fonts", "gradients"]
+}

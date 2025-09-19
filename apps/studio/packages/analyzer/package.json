@@ -1,0 +1,15 @@
+{
+  "name": "@oursynth/analyzer",
+  "version": "0.1.0",
+  "main": "index.ts",
+  "types": "index.ts",
+  "license": "MIT",
+  "scripts": {
+    "tsc:noEmit": "tsc --noEmit",
+    "lint": "echo 'No lint configured for analyzer package'"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.24.0",
+    "@babel/traverse": "^7.24.0"
+  }
+}
