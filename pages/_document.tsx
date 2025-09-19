@@ -6,7 +6,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-          <link rel="apple-touch-icon" href="/logo.svg" />
+  
           <meta name="theme-color" content="#7C4DFF" />
           <meta name="description" content="OurSynth-Eco: Modular, token-driven ecosystem shell." />
         </Head>

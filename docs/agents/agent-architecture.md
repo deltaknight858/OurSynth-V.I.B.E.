@@ -1,5 +1,6 @@
 # Agent Architecture
 
+
 ## Core Agents & Roles
 
 - **OAI:** Conversational AI, user’s entry point
@@ -9,9 +10,34 @@
 - **Provenance:** Tracks origin, authorship, authenticity
 - **Time Travel:** Restores/replays project states
 - **Mesh:** Runs simulations, records history
-- **Deploy/Connect:** Handles deployment pipeline
-- **Domains:** Manages domain mapping, environments
-- **V.I.B.E.:** Visual backend explorer, data dashboard
+- **Memory Agent (Noteflow & Mindmap Capsule):**
+	- The contextual knowledge layer for all Capsules. Integrates Noteflow (graph-based memory node system) and Mindmap (visualization and branching of memory states).
+	- **Core Functions:**
+		- Store, organize, and retrieve contextual knowledge for any Capsule.
+		- Attach NoteFlow graphs directly to Capsules for portable, self-aware context.
+		- Query memory to adapt Capsule behavior based on history and interactions.
+		- Branch and merge memory timelines (like code branches).
+		- Rights-aware sharing and recall.
+	- **User Flows:**
+		- Add, edit, and remove memory notes (WizardCapsulePanel).
+		- Search notes and semantic context.
+		- Visualize context and relationships (MindmapView, MindmapViewForce, MindmapViewForceZoom).
+		- Branch timelines, share, and recall context.
+	- **API:**
+		- `MemoryAPI` for CRUD and search operations.
+		- Graph context and semantic search for advanced workflows.
+
+- **Deploy/Connect:** Handles deployment pipeline. (Planned: Connect agent will manage automated builds, deployments, and integrations with external services.)
+	- One-click deploy pipelines
+	- Integration with cloud/on-prem targets
+	- Provenance and audit tracking for deployments
+
+
+- **V.I.B.E. (Domain Manager):** Manages domain mapping, environments, and backend data. V.I.B.E. is the unified agent for domain management, workspace switching, contextual memory, and backend exploration.
+	- Domain creation and switching
+	- Contextual memory per domain
+	- Agent orchestration and permissions
+	- Visual backend explorer and data dashboard
 
 ## Workflow
 
