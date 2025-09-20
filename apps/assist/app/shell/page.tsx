@@ -34,11 +34,11 @@ export default function ShellPage() {
             <span>🌀</span>
             Aether
           </div>
-          <div className={styles.navItem}>
+          <a href="/shell/capsules" className={styles.navItem}>
             <span>💊</span>
             Capsules
             <span className={styles.marketplaceTag}>$</span>
-          </div>
+          </a>
         </nav>
       </div>
       
