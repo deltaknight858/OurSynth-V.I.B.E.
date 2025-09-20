@@ -1,0 +1,170 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  font-family: Inter, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #111;
+  border-right: 1px solid #333;
+  padding: 1rem;
+}
+
+.logo {
+  color: #7c4dff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.tagline {
+  font-size: 0.75rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2rem;
+  padding: 0.25rem 0.5rem;
+  background: rgba(124, 77, 255, 0.1);
+  border-radius: 4px;
+  text-align: center;
+}
+
+.logoIcon {
+  background-color: #7c4dff;
+  color: white;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.navItem {
+  padding: 0.75rem;
+  margin-bottom: 0.25rem;
+  border-radius: 6px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  position: relative;
+  text-decoration: none;
+}
+
+.navItem:hover {
+  background-color: #333;
+  color: #ccc;
+}
+
+.aiTag, .marketplaceTag {
+  font-size: 0.625rem;
+  padding: 0.125rem 0.375rem;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.aiTag {
+  background: rgba(124, 77, 255, 0.2);
+  color: #7c4dff;
+}
+
+.marketplaceTag {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.navItem:hover {
+  background-color: #333;
+}
+
+.navItemActive {
+  background-color: #7c4dff20;
+  color: #7c4dff;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 2rem;
+  background-color: #0f0f0f;
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.description {
+  color: #ccc;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: #888;
+}
+
+.cloudBadge {
+  background: rgba(74, 144, 226, 0.1);
+  color: #4a90e2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.quickActions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.actionCard {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionCard:hover {
+  border-color: #7c4dff;
+  transform: translateY(-2px);
+}
+
+.actionIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.actionCard h3 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.actionCard p {
+  color: #888;
+  font-size: 0.875rem;
+}

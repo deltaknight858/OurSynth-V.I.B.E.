@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import React from "react";
 import styles from "./LandingPage.module.css";
+import InteractiveDemo from "./InteractiveDemo";
 // Optionally import a mindmap visual here in the future
 
 export default function LandingPage() {
@@ -14,7 +15,7 @@ export default function LandingPage() {
         <nav className={styles.nav}>
           <a href="#features">Features</a>
           <a href="#docs">Docs</a>
-          <a href="#studio" className={styles.ctaButtonSm}>
+          <a href="/shell" className={styles.ctaButtonSm}>
             Enter Studio
           </a>
         </nav>
@@ -22,13 +23,15 @@ export default function LandingPage() {
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
-            <h1 className={styles.heroTitle}>Build at the Speed of Thought</h1>
+            <div className={styles.tagline}>Universal Knowledge Compiler</div>
+            <h1 className={styles.heroTitle}>Transform Any File Into Structured Knowledge</h1>
             <p className={styles.heroSubtitle}>
-              From idea to deployed app in minutes — with AI that remembers, adapts, and ships for you.
+              OurSynth is the AI-first platform that turns your files, scans, and images into queryable, 
+              monetizable knowledge assets. Built on Google Cloud's advanced AI stack.
             </p>
             <div className={styles.heroCta}>
-              <a href="#studio" className={styles.ctaButtonLg}>
-                Begin Your Synthesis
+              <a href="/shell" className={styles.ctaButtonLg}>
+                Enter Studio
               </a>
             </div>
             <form
@@ -48,8 +51,8 @@ export default function LandingPage() {
             <div className={styles.featureIcon}>🧑‍💻</div>
             <h2>Studio</h2>
             <p>
-              The conversational IDE. A creative hub to compose, edit, and orchestrate your
-              applications with AI.
+              Conversational IDE powered by generative AI. Directly aligns with Vertex AI Agent Builder 
+              for natural language development workflows.
             </p>
             <a className={styles.learnMore} href="#">
               Learn More
@@ -59,8 +62,8 @@ export default function LandingPage() {
             <div className={styles.featureIcon}>🧭</div>
             <h2>Pathways</h2>
             <p>
-              The generative core. Use templates and natural language to scaffold entire features in
-              seconds.
+              Natural language scaffolding that showcases Gemini APIs for rapid prototyping. 
+              Transform intentions into structured development paths.
             </p>
             <a className={styles.learnMore} href="#">
               Learn More
@@ -70,8 +73,8 @@ export default function LandingPage() {
             <div className={styles.featureIcon}>🧠</div>
             <h2>NoteFlow</h2>
             <p>
-              Intelligent memory capsules that let your apps learn, adapt, and carry context
-              anywhere.
+              Memory capsules provide persistent context layers, ideal for BigQuery and Cloud Storage 
+              integration. Long-term knowledge retention for AI agents.
             </p>
             <a className={styles.learnMore} href="#">
               Learn More
@@ -81,25 +84,27 @@ export default function LandingPage() {
             <div className={styles.featureIcon}>🚀</div>
             <h2>Deploy</h2>
             <p>
-              The shipping pipeline. One-click, automated builds and deployments to your preferred
-              environment.
+              One-click builds that run seamlessly on Cloud Run and Google Kubernetes Engine. 
+              Automated CI/CD with Google Cloud infrastructure.
             </p>
             <a className={styles.learnMore} href="#">
               Learn More
             </a>
           </div>
           <div className={styles.featureCard}>
-            <div className={styles.featureIcon}>⏳</div>
+            <div className={styles.featureIcon}>💊</div>
             <h2>Capsules</h2>
             <p>
-              The time machine. Create signed, portable, and replayable application bundles with
-              built-in provenance.
+              Portable, replayable bundles monetizable via knowledge marketplace. 
+              Revenue-generating digital assets with built-in provenance.
             </p>
             <a className={styles.learnMore} href="#">
               Learn More
             </a>
           </div>
         </section>
+
+        <InteractiveDemo />
 
         <section className={styles.socialProof}>
           <div className={styles.builtWith}>
