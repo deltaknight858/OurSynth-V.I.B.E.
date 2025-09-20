@@ -39,6 +39,11 @@ export default function ShellPage() {
             Capsules
             <span className={styles.marketplaceTag}>$</span>
           </a>
+          <a href="/shell/chat" className={styles.navItem}>
+            <span>💬</span>
+            Chat
+            <span className={styles.aiTag}>AI</span>
+          </a>
         </nav>
       </div>
       
