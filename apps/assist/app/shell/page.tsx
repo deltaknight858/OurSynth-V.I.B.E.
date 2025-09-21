@@ -30,10 +30,11 @@ export default function ShellPage() {
             Studio
             <span className={styles.aiTag}>AI</span>
           </a>
-          <div className={styles.navItem}>
+          <a href="/shell/aether" className={styles.navItem}>
             <span>🌀</span>
             Aether
-          </div>
+            <span className={styles.aiTag}>AI</span>
+          </a>
           <a href="/shell/capsules" className={styles.navItem}>
             <span>💊</span>
             Capsules
