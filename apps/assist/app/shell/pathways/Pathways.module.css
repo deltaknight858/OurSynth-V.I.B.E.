@@ -266,6 +266,18 @@
   min-width: fit-content;
 }
 
+.difficultyBadge.beginner {
+  background-color: #10b981;
+}
+
+.difficultyBadge.intermediate {
+  background-color: #f59e0b;
+}
+
+.difficultyBadge.advanced {
+  background-color: #ef4444;
+}
+
 .pathwayDescription {
   color: var(--color-text-muted);
   line-height: 1.5;
@@ -306,9 +318,17 @@
 
 .progressFill {
   height: 100%;
+  width: 0%;
   background: linear-gradient(90deg, var(--color-brand), #9c6aff);
   transition: width 0.3s ease;
 }
+
+.progressFill.progress0 { width: 0%; }
+.progressFill.progress25 { width: 25%; }
+.progressFill.progress50 { width: 50%; }
+.progressFill.progress60 { width: 60%; }
+.progressFill.progress75 { width: 75%; }
+.progressFill.progress100 { width: 100%; }
 
 .progressText {
   font-size: 0.75rem;
@@ -589,6 +609,18 @@
 .templateDifficulty {
   font-weight: 600;
   text-transform: capitalize;
+}
+
+.templateDifficulty.beginner {
+  color: #10b981;
+}
+
+.templateDifficulty.intermediate {
+  color: #f59e0b;
+}
+
+.templateDifficulty.advanced {
+  color: #ef4444;
 }
 
 .templateFeatures {
@@ -1084,6 +1116,18 @@
 
 .detailValue {
   color: var(--color-text-muted);
+}
+
+.detailValue.beginner {
+  color: #10b981;
+}
+
+.detailValue.intermediate {
+  color: #f59e0b;
+}
+
+.detailValue.advanced {
+  color: #ef4444;
 }
 
 .stepsOverview {

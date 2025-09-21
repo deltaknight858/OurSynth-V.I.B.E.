@@ -250,13 +250,13 @@ export default function PathwaysPage() {
     }
   };
 
-  const getDifficultyColor = (difficulty: string) => {
-    switch (difficulty) {
-      case 'beginner': return '#10b981';
-      case 'intermediate': return '#f59e0b';
-      case 'advanced': return '#ef4444';
-      default: return '#6b7280';
-    }
+  const getProgressClass = (progress: number) => {
+    if (progress <= 0) return 'progress0';
+    if (progress <= 25) return 'progress25';
+    if (progress <= 50) return 'progress50';
+    if (progress <= 60) return 'progress60';
+    if (progress <= 75) return 'progress75';
+    return 'progress100';
   };
 
   return (
@@ -348,8 +348,7 @@ export default function PathwaysPage() {
                   <div className={styles.pathwayHeader}>
                     <h3 className={styles.pathwayTitle}>{path.title}</h3>
                     <div 
-                      className={styles.difficultyBadge}
-                      style={{ backgroundColor: getDifficultyColor(path.difficulty) }}
+                      className={`${styles.difficultyBadge} ${styles[path.difficulty]}`}
                     >
                       {path.difficulty}
                     </div>
@@ -375,8 +374,7 @@ export default function PathwaysPage() {
                     <div className={styles.progressSection}>
                       <div className={styles.progressBar}>
                         <div 
-                          className={styles.progressFill}
-                          style={{ width: `${path.progress}%` }}
+                          className={`${styles.progressFill} ${styles[getProgressClass(path.progress || 0)]}`}
                         />
                       </div>
                       <span className={styles.progressText}>{path.progress}% complete</span>
@@ -427,8 +425,7 @@ export default function PathwaysPage() {
                     <div className={styles.pathwayHeader}>
                       <h3 className={styles.pathwayTitle}>{path.title}</h3>
                       <div 
-                        className={styles.difficultyBadge}
-                        style={{ backgroundColor: getDifficultyColor(path.difficulty) }}
+                        className={`${styles.difficultyBadge} ${styles[path.difficulty]}`}
                       >
                         {path.difficulty}
                       </div>
@@ -437,8 +434,7 @@ export default function PathwaysPage() {
                     <div className={styles.progressSection}>
                       <div className={styles.progressBar}>
                         <div 
-                          className={styles.progressFill}
-                          style={{ width: `${path.progress}%` }}
+                          className={`${styles.progressFill} ${styles[getProgressClass(path.progress || 0)]}`}
                         />
                       </div>
                       <span className={styles.progressText}>{path.progress}% complete</span>
@@ -506,7 +502,7 @@ export default function PathwaysPage() {
                         <h4>{template.name}</h4>
                         <p>{template.description}</p>
                         <div className={styles.templateMeta}>
-                          <span className={styles.templateDifficulty} style={{ color: getDifficultyColor(template.difficulty) }}>
+                          <span className={`${styles.templateDifficulty} ${styles[template.difficulty]}`}>
                             {template.difficulty}
                           </span>
                           <span>{template.estimatedTime}</span>
@@ -545,8 +541,9 @@ export default function PathwaysPage() {
                   <h3>Define Your Pathway</h3>
                   <div className={styles.form}>
                     <div className={styles.formGroup}>
-                      <label>Pathway Title</label>
+                      <label htmlFor="pathway-title">Pathway Title</label>
                       <input
+                        id="pathway-title"
                         type="text"
                         className={styles.formInput}
                         placeholder="e.g., Machine Learning for Beginners"
@@ -555,8 +552,9 @@ export default function PathwaysPage() {
                       />
                     </div>
                     <div className={styles.formGroup}>
-                      <label>Description</label>
+                      <label htmlFor="pathway-description">Description</label>
                       <textarea
+                        id="pathway-description"
                         className={styles.formTextarea}
                         placeholder="Describe what learners will achieve..."
                         value={wizardData.description}
@@ -566,8 +564,9 @@ export default function PathwaysPage() {
                     </div>
                     <div className={styles.formRow}>
                       <div className={styles.formGroup}>
-                        <label>Category</label>
+                        <label htmlFor="pathway-category">Category</label>
                         <select
+                          id="pathway-category"
                           className={styles.formSelect}
                           value={wizardData.category}
                           onChange={(e) => setWizardData(prev => ({ ...prev, category: e.target.value }))}
@@ -579,8 +578,9 @@ export default function PathwaysPage() {
                         </select>
                       </div>
                       <div className={styles.formGroup}>
-                        <label>Difficulty</label>
+                        <label htmlFor="pathway-difficulty">Difficulty</label>
                         <select
+                          id="pathway-difficulty"
                           className={styles.formSelect}
                           value={wizardData.difficulty}
                           onChange={(e) => setWizardData(prev => ({ ...prev, difficulty: e.target.value as any }))}
@@ -591,8 +591,9 @@ export default function PathwaysPage() {
                         </select>
                       </div>
                       <div className={styles.formGroup}>
-                        <label>Estimated Time</label>
+                        <label htmlFor="pathway-time">Estimated Time</label>
                         <input
+                          id="pathway-time"
                           type="text"
                           className={styles.formInput}
                           placeholder="e.g., 4-6 weeks"
@@ -788,8 +789,7 @@ export default function PathwaysPage() {
                 <div className={styles.detailItem}>
                   <span className={styles.detailLabel}>Difficulty:</span>
                   <span 
-                    className={styles.detailValue}
-                    style={{ color: getDifficultyColor(selectedPath.difficulty) }}
+                    className={`${styles.detailValue} ${styles[selectedPath.difficulty]}`}
                   >
                     {selectedPath.difficulty}
                   </span>

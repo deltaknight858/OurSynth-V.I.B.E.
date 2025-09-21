@@ -1,19 +1,24 @@
 {
   "name": "assist",
-  "private": true,
   "version": "0.0.1",
-  "type": "module",
+  "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 3001",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@oursynth/core": "file:../../packages/core",
     "next": "14.2.3",
-    "openai": "^5.20.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "openai": "5.20.3"
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "typescript": "^5",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3"
   }
 }

@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 
-import React from "react";
 import styles from "./LandingPage.module.css";
 import InteractiveDemo from "./InteractiveDemo";
 // Optionally import a mindmap visual here in the future

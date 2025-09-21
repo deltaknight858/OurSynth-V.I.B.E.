@@ -3,7 +3,6 @@ import React, { useEffect, useMemo, useState } from 'react';
 import WizardCapsulePanel from '@/components/capsules/WizardCapsulePanel';
 import { MindmapViewForceZoom } from '@/packages/wizard-capsule/src/components/MindmapViewForceZoom';
 import { inMemoryBackend, supabaseBackend, makeLoadContext } from '../../memoryBackends';
-import { inMemoryBackend, supabaseBackend, makeLoadContext } from '../../memoryBackends.ts';
 
 export default function MemoryTestPage() {
   const [useSupabase, setUseSupabase] = useState<boolean>(
