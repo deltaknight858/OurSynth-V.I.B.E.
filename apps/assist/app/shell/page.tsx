@@ -55,6 +55,11 @@ export default function ShellPage() {
             Pathways
             <span className={styles.aiTag}>AI</span>
           </a>
+          <a href="/shell/provenance" className={styles.navItem}>
+            <span>🕰️</span>
+            Provenance
+            <span className={styles.aiTag}>AI</span>
+          </a>
         </nav>
       </div>
       
