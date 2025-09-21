@@ -44,6 +44,16 @@ export default function ShellPage() {
             Chat
             <span className={styles.aiTag}>AI</span>
           </a>
+          <a href="/shell/noteflow" className={styles.navItem}>
+            <span>📝</span>
+            NoteFlow
+            <span className={styles.aiTag}>AI</span>
+          </a>
+          <a href="/shell/pathways" className={styles.navItem}>
+            <span>🛤️</span>
+            Pathways
+            <span className={styles.aiTag}>AI</span>
+          </a>
         </nav>
       </div>
       
