@@ -3,40 +3,11 @@ import { useState, useEffect } from 'react';
 import { MediaRecorder } from '../../../components/noteflow/MediaRecorder';
 import { ScreenCapture } from '../../../components/noteflow/ScreenCapture';
 import { VoiceCommandManager } from '../../../components/noteflow/VoiceCommandManager';
-import { voiceCommandService } from '../../../lib/services/voiceCommandService';
+import { serviceRegistry } from '../../../lib/services/serviceRegistry';
+import { Note, TaskInfo, MediaAttachment } from '../../../lib/types/core';
 import styles from './NoteFlow.module.css';
 
-interface TaskInfo {
-  title: string;
-  status: 'todo' | 'in-progress' | 'completed' | 'cancelled';
-  assignedAgent?: string;
-  priority?: 'low' | 'medium' | 'high' | 'critical';
-  dueDate?: Date;
-  subtasks?: Array<{
-    id: string;
-    title: string;
-    completed: boolean;
-  }>;
-}
-
-interface MemoryNote {
-  id: string;
-  content: string;
-  tags?: string[];
-  timestamp: Date;
-  attachments?: MediaAttachment[];
-  taskInfo?: TaskInfo; // TaskFlow enhancement
-  noteType?: 'standard' | 'taskflow'; // Track note type
-}
-
-interface MediaAttachment {
-  id: string;
-  kind: 'image' | 'audio' | 'video' | 'file';
-  url: string;
-  mime?: string;
-  meta?: Record<string, unknown>;
-}
-
+// Legacy interface for memory nodes (mindmap visualization)
 interface MemoryNode {
   id: string;
   title: string;
@@ -48,40 +19,18 @@ interface MemoryNode {
 }
 
 export default function NoteFlowPage() {
-  const [notes, setNotes] = useState<MemoryNote[]>([
-    {
-      id: '1',
-      content: 'Exploring Google Cloud AI integration patterns for workflow automation. Key insight: Vertex AI provides excellent semantic embedding capabilities for memory systems.',
-      tags: ['google-cloud', 'vertex-ai', 'workflows'],
-      timestamp: new Date('2025-09-20T15:30:00.000Z'),
-      noteType: 'standard'
-    },
-    {
-      id: '2', 
-      content: 'Memory capsules should maintain contextual relationships. Each note can connect to multiple other notes through semantic similarity and explicit links.',
-      tags: ['memory', 'capsules', 'architecture'],
-      timestamp: new Date('2025-09-20T16:15:00.000Z'),
-      noteType: 'standard'
-    },
-    {
-      id: '3',
-      content: '# OurSynth Platform Development\n\nKey development tasks for the OurSynth ecosystem integration.\n\n## Tasks\n- [ ] Integrate TaskFlow with NoteFlow\n- [ ] Update shell navigation\n- [ ] Add pathways wizard support',
-      tags: ['taskflow', 'development', 'integration'],
-      timestamp: new Date('2025-09-20T17:00:00.000Z'),
-      noteType: 'taskflow',
-      taskInfo: {
-        title: 'OurSynth Platform Development',
-        status: 'in-progress',
-        assignedAgent: 'AI Development Agent',
-        priority: 'high',
-        subtasks: [
-          { id: '3_1', title: 'Integrate TaskFlow with NoteFlow', completed: false },
-          { id: '3_2', title: 'Update shell navigation', completed: false },
-          { id: '3_3', title: 'Add pathways wizard support', completed: false }
-        ]
-      }
-    }
-  ]);
+  const [notes, setNotes] = useState<Note[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [newNote, setNewNote] = useState('');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [activeView, setActiveView] = useState<'notes' | 'taskflow' | 'mindmap' | 'search'>('notes');
+  const [isSearching, setIsSearching] = useState(false);
+  
+  // Wizard context state
+  const [showWizardItems, setShowWizardItems] = useState(true);
+  const [wizardContext, setWizardContext] = useState<any>(null);
 
   const [memoryNodes, setMemoryNodes] = useState<MemoryNode[]>([
     {
@@ -104,11 +53,51 @@ export default function NoteFlowPage() {
     }
   ]);
 
-  const [newNote, setNewNote] = useState('');
-  const [searchQuery, setSearchQuery] = useState('');
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [activeView, setActiveView] = useState<'notes' | 'taskflow' | 'mindmap' | 'search'>('notes');
-  const [isSearching, setIsSearching] = useState(false);
+  // Initialize services and load data
+  useEffect(() => {
+    initializeServices();
+  }, []);
+
+  const initializeServices = async () => {
+    try {
+      setLoading(true);
+      
+      // Initialize service registry
+      const initResult = await serviceRegistry.initialize();
+      if (!initResult.success) {
+        throw new Error(initResult.error || 'Failed to initialize services');
+      }
+
+      // Set view context
+      serviceRegistry.setViewContext({ activeView: 'notes' });
+
+      // Load notes
+      await loadNotes();
+
+      // Load wizard context
+      const wizardContextData = serviceRegistry.wizardContextRegistry.getCurrentContext();
+      setWizardContext(wizardContextData);
+
+    } catch (error) {
+      console.error('Failed to initialize services:', error);
+      setError(error instanceof Error ? error.message : 'Failed to initialize');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const loadNotes = async () => {
+    try {
+      const result = await serviceRegistry.getCurrentViewItems();
+      if (result.success && result.data) {
+        setNotes(result.data as Note[]);
+      } else {
+        console.error('Failed to load notes:', result.error);
+      }
+    } catch (error) {
+      console.error('Error loading notes:', error);
+    }
+  };
 
   // Get all unique tags
   const allTags = Array.from(
@@ -129,20 +118,46 @@ export default function NoteFlowPage() {
   const handleAddNote = async () => {
     if (!newNote.trim()) return;
 
-    const note: MemoryNote = {
-      id: Date.now().toString(),
-      content: newNote.trim(),
-      timestamp: new Date(),
-      tags: extractTags(newNote)
-    };
+    try {
+      // Extract tags and note type
+      const tags = extractTags(newNote);
+      const isTaskFlow = newNote.includes('TaskFlow') || tags.includes('taskflow');
+      
+      const noteData = {
+        content: newNote.trim(),
+        tags: tags.length > 0 ? tags : undefined,
+        noteType: isTaskFlow ? 'taskflow' as const : 'standard' as const,
+        taskInfo: isTaskFlow ? {
+          title: newNote.split('\n')[0].replace('#', '').trim() || 'New TaskFlow',
+          status: 'todo' as const,
+          priority: 'medium' as const,
+          subtasks: [
+            { id: `${Date.now()}_1`, title: 'Initial task', completed: false }
+          ]
+        } : undefined
+      };
 
-    setNotes(prev => [note, ...prev]);
-    setNewNote('');
-
-    // Simulate AI processing for semantic connections
-    setTimeout(() => {
-      console.log('Processing semantic connections for new note...');
-    }, 500);
+      // Create note using service registry
+      const result = await serviceRegistry.createItemWithWizardContext(noteData, 'note');
+      
+      if (result.success && result.data) {
+        // Update local state
+        setNotes(prev => [result.data as Note, ...prev]);
+        setNewNote('');
+        
+        // Update wizard context if applicable
+        if (wizardContext?.currentProject) {
+          const updatedContext = serviceRegistry.wizardContextRegistry.getCurrentContext();
+          setWizardContext(updatedContext);
+        }
+      } else {
+        console.error('Failed to create note:', result.error);
+        setError(result.error || 'Failed to create note');
+      }
+    } catch (error) {
+      console.error('Error creating note:', error);
+      setError('Failed to create note');
+    }
   };
 
   const extractTags = (content: string): string[] => {
@@ -153,13 +168,28 @@ export default function NoteFlowPage() {
 
   const handleSearch = async (e: React.FormEvent) => {
     e.preventDefault();
+    if (!searchQuery.trim()) return;
+
     setIsSearching(true);
     
-    // Simulate semantic search
-    setTimeout(() => {
+    try {
+      // Use service registry for global search
+      const result = await serviceRegistry.globalSearch(searchQuery, {
+        includeWizardGenerated: showWizardItems,
+        itemTypes: ['note']
+      });
+
+      if (result.success && result.data) {
+        setNotes(result.data.notes as Note[]);
+        setActiveView('search');
+      } else {
+        console.error('Search failed:', result.error);
+      }
+    } catch (error) {
+      console.error('Error during search:', error);
+    } finally {
       setIsSearching(false);
-      setActiveView('search');
-    }, 800);
+    }
   };
 
   const handleTagToggle = (tag: string) => {
@@ -189,17 +219,21 @@ export default function NoteFlowPage() {
         }
       };
 
-      // Add audio note
-      const audioNote: MemoryNote = {
-        id: Date.now().toString(),
+      // Create audio note using service
+      const noteData = {
         content: `🎤 Audio Recording - ${new Date().toLocaleTimeString()}`,
-        timestamp: new Date(),
         tags: ['audio', 'voice-recording'],
         attachments: [audioAttachment]
       };
 
-      setNotes(prev => [audioNote, ...prev]);
-      console.log('Audio recording added to notes');
+      const result = await serviceRegistry.createItemWithWizardContext(noteData, 'note');
+      
+      if (result.success && result.data) {
+        setNotes(prev => [result.data as Note, ...prev]);
+        console.log('Audio recording added to notes');
+      } else {
+        console.error('Failed to create audio note:', result.error);
+      }
     } catch (error) {
       console.error('Error handling audio recording:', error);
     }
@@ -222,36 +256,129 @@ export default function NoteFlowPage() {
         }
       };
 
-      const screenNote: MemoryNote = {
-        id: Date.now().toString(),
+      // Create screen capture note using service
+      const noteData = {
         content: `📸 Screen Capture - ${new Date().toLocaleTimeString()}`,
-        timestamp: new Date(),
         tags: ['screenshot', 'visual'],
         attachments: [imageAttachment]
       };
 
-      setNotes(prev => [screenNote, ...prev]);
-      console.log('Screen capture added to notes');
+      const result = await serviceRegistry.createItemWithWizardContext(noteData, 'note');
+      
+      if (result.success && result.data) {
+        setNotes(prev => [result.data as Note, ...prev]);
+        console.log('Screen capture added to notes');
+      } else {
+        console.error('Failed to create screen capture note:', result.error);
+      }
     } catch (error) {
       console.error('Error handling screen capture:', error);
     }
   };
 
+  // Voice command handler
   const handleVoiceCommand = async (command?: any) => {
     if (!command) return;
     
     try {
-      const result = await voiceCommandService.executeCommand(
+      const currentUserId = serviceRegistry.authService.getCurrentUserId();
+      if (!currentUserId) {
+        console.error('No authenticated user for voice command');
+        return;
+      }
+
+      const result = await serviceRegistry.voiceCommandService.executeCommand(
         command, 
-        'current-user', // Would come from auth context in real app
+        currentUserId,
         notes,
         setNotes
       );
+      
       console.log('Voice command result:', result);
+      
+      // Reload notes after voice command execution
+      await loadNotes();
+      
     } catch (error) {
       console.error('Error executing voice command:', error);
     }
   };
+
+  // View switching with service integration
+  const handleViewChange = async (newView: 'notes' | 'taskflow' | 'mindmap' | 'search') => {
+    if (newView === 'search') {
+      setActiveView(newView);
+      return;
+    }
+
+    try {
+      // Map taskflow to notes view with filter
+      const serviceView = newView === 'taskflow' ? 'notes' : newView;
+      const result = await serviceRegistry.switchView(serviceView);
+      
+      if (result.success && result.data) {
+        if (newView === 'taskflow') {
+          // Filter for taskflow notes only
+          const taskflowNotes = (result.data as Note[]).filter(note => note.noteType === 'taskflow');
+          setNotes(taskflowNotes);
+        } else {
+          setNotes(result.data as Note[]);
+        }
+        setActiveView(newView);
+      } else {
+        console.error('Failed to switch view:', result.error);
+      }
+    } catch (error) {
+      console.error('Error switching view:', error);
+    }
+  };
+
+  // Delete note handler
+  const handleDeleteNote = async (noteId: string) => {
+    try {
+      const result = await serviceRegistry.noteService.delete(noteId);
+      
+      if (result.success) {
+        setNotes(prev => prev.filter(note => note.id !== noteId));
+        
+        // Remove from wizard tracking if applicable
+        await serviceRegistry.wizardContextRegistry.removeWizardItem(noteId);
+        
+        console.log('Note deleted successfully');
+      } else {
+        console.error('Failed to delete note:', result.error);
+      }
+    } catch (error) {
+      console.error('Error deleting note:', error);
+    }
+  };
+
+  // Early return for loading state
+  if (loading) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.loadingContainer}>
+          <div className={styles.spinner}></div>
+          <p>Initializing NoteFlow services...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Early return for error state
+  if (error) {
+    return (
+      <div className={styles.container}>
+        <div className={styles.errorContainer}>
+          <h2>Error</h2>
+          <p>{error}</p>
+          <button onClick={initializeServices} className={styles.retryButton}>
+            Retry
+          </button>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className={styles.container}>
@@ -262,11 +389,29 @@ export default function NoteFlowPage() {
           <p className={styles.subtitle}>
             Intelligent note management with semantic connections and mindmap visualization
           </p>
+          {wizardContext?.currentProject && (
+            <div className={styles.wizardContext}>
+              <span className={styles.wizardBadge}>
+                🧙‍♂️ {wizardContext.currentProject.name} 
+                ({wizardContext.currentProject.type})
+              </span>
+            </div>
+          )}
         </div>
         <div className={styles.headerActions}>
           <span className={styles.badge}>
             {notes.length} notes • {memoryNodes.length} memory nodes
+            {wizardContext?.activeItems?.length > 0 && 
+              ` • ${wizardContext.activeItems.length} wizard items`
+            }
           </span>
+          <button 
+            className={styles.wizardToggle}
+            onClick={() => setShowWizardItems(!showWizardItems)}
+            title={showWizardItems ? 'Hide wizard items' : 'Show wizard items'}
+          >
+            {showWizardItems ? '🔮✓' : '🔮'}
+          </button>
         </div>
       </div>
 
@@ -274,28 +419,28 @@ export default function NoteFlowPage() {
       <div className={styles.tabs}>
         <button 
           className={`${styles.tab} ${activeView === 'notes' ? styles.tabActive : ''}`}
-          onClick={() => setActiveView('notes')}
+          onClick={() => handleViewChange('notes')}
         >
           <span className={styles.tabIcon}>📝</span>
           Notes
         </button>
         <button 
           className={`${styles.tab} ${activeView === 'taskflow' ? styles.tabActive : ''}`}
-          onClick={() => setActiveView('taskflow')}
+          onClick={() => handleViewChange('taskflow')}
         >
           <span className={styles.tabIcon}>✅</span>
           TaskFlow
         </button>
         <button 
           className={`${styles.tab} ${activeView === 'mindmap' ? styles.tabActive : ''}`}
-          onClick={() => setActiveView('mindmap')}
+          onClick={() => handleViewChange('mindmap')}
         >
           <span className={styles.tabIcon}>🧠</span>
           Mindmap
         </button>
         <button 
           className={`${styles.tab} ${activeView === 'search' ? styles.tabActive : ''}`}
-          onClick={() => setActiveView('search')}
+          onClick={() => handleViewChange('search')}
         >
           <span className={styles.tabIcon}>🔍</span>
           Search
@@ -436,7 +581,11 @@ export default function NoteFlowPage() {
                       <button className={styles.actionButton} title="Edit note">
                         ✏️
                       </button>
-                      <button className={styles.actionButton} title="Delete note">
+                      <button 
+                        className={styles.actionButton} 
+                        title="Delete note"
+                        onClick={() => handleDeleteNote(note.id)}
+                      >
                         🗑️
                       </button>
                     </div>
@@ -612,10 +761,7 @@ export default function NoteFlowPage() {
                       <button 
                         className={styles.actionButton} 
                         title="Delete TaskFlow"
-                        onClick={() => {
-                          const filteredNotes = notes.filter(n => n.id !== note.id);
-                          setNotes(filteredNotes);
-                        }}
+                        onClick={() => handleDeleteNote(note.id)}
                       >
                         🗑️
                       </button>
