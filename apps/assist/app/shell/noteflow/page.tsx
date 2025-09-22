@@ -6,12 +6,27 @@ import { VoiceCommandManager } from '../../../components/noteflow/VoiceCommandMa
 import { voiceCommandService } from '../../../lib/services/voiceCommandService';
 import styles from './NoteFlow.module.css';
 
+interface TaskInfo {
+  title: string;
+  status: 'todo' | 'in-progress' | 'completed' | 'cancelled';
+  assignedAgent?: string;
+  priority?: 'low' | 'medium' | 'high' | 'critical';
+  dueDate?: Date;
+  subtasks?: Array<{
+    id: string;
+    title: string;
+    completed: boolean;
+  }>;
+}
+
 interface MemoryNote {
   id: string;
   content: string;
   tags?: string[];
   timestamp: Date;
   attachments?: MediaAttachment[];
+  taskInfo?: TaskInfo; // TaskFlow enhancement
+  noteType?: 'standard' | 'taskflow'; // Track note type
 }
 
 interface MediaAttachment {
@@ -38,13 +53,33 @@ export default function NoteFlowPage() {
       id: '1',
       content: 'Exploring Google Cloud AI integration patterns for workflow automation. Key insight: Vertex AI provides excellent semantic embedding capabilities for memory systems.',
       tags: ['google-cloud', 'vertex-ai', 'workflows'],
-      timestamp: new Date('2025-09-20T15:30:00.000Z')
+      timestamp: new Date('2025-09-20T15:30:00.000Z'),
+      noteType: 'standard'
     },
     {
       id: '2', 
       content: 'Memory capsules should maintain contextual relationships. Each note can connect to multiple other notes through semantic similarity and explicit links.',
       tags: ['memory', 'capsules', 'architecture'],
-      timestamp: new Date('2025-09-20T16:15:00.000Z')
+      timestamp: new Date('2025-09-20T16:15:00.000Z'),
+      noteType: 'standard'
+    },
+    {
+      id: '3',
+      content: '# OurSynth Platform Development\n\nKey development tasks for the OurSynth ecosystem integration.\n\n## Tasks\n- [ ] Integrate TaskFlow with NoteFlow\n- [ ] Update shell navigation\n- [ ] Add pathways wizard support',
+      tags: ['taskflow', 'development', 'integration'],
+      timestamp: new Date('2025-09-20T17:00:00.000Z'),
+      noteType: 'taskflow',
+      taskInfo: {
+        title: 'OurSynth Platform Development',
+        status: 'in-progress',
+        assignedAgent: 'AI Development Agent',
+        priority: 'high',
+        subtasks: [
+          { id: '3_1', title: 'Integrate TaskFlow with NoteFlow', completed: false },
+          { id: '3_2', title: 'Update shell navigation', completed: false },
+          { id: '3_3', title: 'Add pathways wizard support', completed: false }
+        ]
+      }
     }
   ]);
 
@@ -72,7 +107,7 @@ export default function NoteFlowPage() {
   const [newNote, setNewNote] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [activeView, setActiveView] = useState<'notes' | 'mindmap' | 'search'>('notes');
+  const [activeView, setActiveView] = useState<'notes' | 'taskflow' | 'mindmap' | 'search'>('notes');
   const [isSearching, setIsSearching] = useState(false);
 
   // Get all unique tags
@@ -245,6 +280,13 @@ export default function NoteFlowPage() {
           Notes
         </button>
         <button 
+          className={`${styles.tab} ${activeView === 'taskflow' ? styles.tabActive : ''}`}
+          onClick={() => setActiveView('taskflow')}
+        >
+          <span className={styles.tabIcon}>✅</span>
+          TaskFlow
+        </button>
+        <button 
           className={`${styles.tab} ${activeView === 'mindmap' ? styles.tabActive : ''}`}
           onClick={() => setActiveView('mindmap')}
         >
@@ -395,6 +437,186 @@ export default function NoteFlowPage() {
                         ✏️
                       </button>
                       <button className={styles.actionButton} title="Delete note">
+                        🗑️
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </>
+        )}
+
+        {activeView === 'taskflow' && (
+          <>
+            {/* TaskFlow Input */}
+            <div className={styles.noteInput}>
+              <div className={styles.inputHeader}>
+                <h2 className={styles.sectionTitle}>Create New TaskFlow</h2>
+                <div className={styles.inputActions}>
+                  <VoiceCommandManager onCommand={handleVoiceCommand} />
+                  <MediaRecorder onRecordingComplete={(audioBlob) => console.log('Audio recorded:', audioBlob)} />
+                  <ScreenCapture onCapture={(imageUrl) => console.log('Screen captured:', imageUrl)} />
+                </div>
+              </div>
+              
+              <div className={styles.inputGroup}>
+                <textarea
+                  value={newNote}
+                  onChange={(e) => setNewNote(e.target.value)}
+                  placeholder="Create a new TaskFlow... Use # for tags, describe tasks and assignments..."
+                  className={styles.noteTextarea}
+                  rows={6}
+                />
+                <button 
+                  onClick={handleAddNote}
+                  className={styles.addButton}
+                  disabled={!newNote.trim()}
+                >
+                  Create TaskFlow ✅
+                </button>
+              </div>
+            </div>
+
+            {/* TaskFlow List */}
+            <div className={styles.notesGrid}>
+              {filteredNotes.filter(note => note.noteType === 'taskflow').length === 0 ? (
+                <div className={styles.emptyState}>
+                  <div className={styles.emptyStateIcon}>✅</div>
+                  <h3>No TaskFlows yet</h3>
+                  <p>Create your first TaskFlow to organize tasks and assignments.</p>
+                </div>
+              ) : (
+                filteredNotes.filter(note => note.noteType === 'taskflow').map(note => (
+                  <div key={note.id} className={`${styles.noteCard} ${styles.taskflowCard}`}>
+                    <div className={styles.noteContent}>
+                      {/* TaskFlow Header */}
+                      {note.taskInfo && (
+                        <div className={styles.taskflowHeader}>
+                          <div className={styles.taskflowTitle}>
+                            <span className={styles.taskflowIcon}>✅</span>
+                            <h3>{note.taskInfo.title}</h3>
+                          </div>
+                          <div className={styles.taskflowMeta}>
+                            <span className={`${styles.taskStatus} ${styles[`status-${note.taskInfo.status}`]}`}>
+                              {note.taskInfo.status}
+                            </span>
+                            {note.taskInfo.priority && (
+                              <span className={`${styles.taskPriority} ${styles[`priority-${note.taskInfo.priority}`]}`}>
+                                {note.taskInfo.priority}
+                              </span>
+                            )}
+                            {note.taskInfo.assignedAgent && (
+                              <span className={styles.assignedAgent}>
+                                👤 {note.taskInfo.assignedAgent}
+                              </span>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                      
+                      {/* Subtasks */}
+                      {note.taskInfo?.subtasks && note.taskInfo.subtasks.length > 0 && (
+                        <div className={styles.subtasksList}>
+                          <h4>Tasks:</h4>
+                          {note.taskInfo.subtasks.map(subtask => (
+                            <div key={subtask.id} className={styles.subtaskItem}>
+                              <input 
+                                type="checkbox" 
+                                checked={subtask.completed}
+                                onChange={() => {
+                                  // Update subtask completion
+                                  const updatedNotes = notes.map(n => 
+                                    n.id === note.id && n.taskInfo 
+                                      ? {
+                                          ...n,
+                                          taskInfo: {
+                                            ...n.taskInfo,
+                                            subtasks: n.taskInfo.subtasks?.map(st =>
+                                              st.id === subtask.id 
+                                                ? { ...st, completed: !st.completed }
+                                                : st
+                                            )
+                                          }
+                                        }
+                                      : n
+                                  );
+                                  setNotes(updatedNotes);
+                                }}
+                              />
+                              <span className={subtask.completed ? styles.completedTask : ''}>
+                                {subtask.title}
+                              </span>
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      
+                      {/* Note Content */}
+                      <div className={styles.noteText}>
+                        {note.content.split('\n').map((line, index) => (
+                          <div key={index}>{line}</div>
+                        ))}
+                      </div>
+                      
+                      {/* Attachments */}
+                      {note.attachments && note.attachments.length > 0 && (
+                        <div className={styles.attachments}>
+                          {note.attachments.map(attachment => (
+                            <div key={attachment.id} className={styles.attachment}>
+                              {attachment.kind === 'image' && (
+                                <img src={attachment.url} alt="Attachment" />
+                              )}
+                              {attachment.kind === 'audio' && (
+                                <audio controls src={attachment.url}>
+                                  Your browser does not support audio playback.
+                                </audio>
+                              )}
+                              {attachment.kind === 'video' && (
+                                <video controls width="200" src={attachment.url}>
+                                  Your browser does not support video playback.
+                                </video>
+                              )}
+                              {attachment.kind === 'file' && (
+                                <div className={styles.attachmentIcon}>
+                                  📄
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      
+                      <div className={styles.noteMeta}>
+                        <span className={styles.noteTime}>
+                          {note.timestamp.toLocaleString()}
+                        </span>
+                        {note.tags && note.tags.length > 0 && (
+                          <div className={styles.noteTags}>
+                            {note.tags.map(tag => (
+                              <span key={tag} className={styles.noteTag}>
+                                #{tag}
+                              </span>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                    <div className={styles.noteActions}>
+                      <button className={styles.actionButton} title="Edit TaskFlow">
+                        ✏️
+                      </button>
+                      <button className={styles.actionButton} title="Share TaskFlow">
+                        📤
+                      </button>
+                      <button 
+                        className={styles.actionButton} 
+                        title="Delete TaskFlow"
+                        onClick={() => {
+                          const filteredNotes = notes.filter(n => n.id !== note.id);
+                          setNotes(filteredNotes);
+                        }}
+                      >
                         🗑️
                       </button>
                     </div>
