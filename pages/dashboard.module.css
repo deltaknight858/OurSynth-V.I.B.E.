@@ -1,0 +1,278 @@
+/* Dashboard Styles */
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.dashboardHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.dashboardTitle {
+  font-family: var(--font-family-heading, 'Orbitron', monospace);
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #7C4DFF 0%, #00F5FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 1rem;
+}
+
+.dashboardSubtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-muted, #A3A3B0);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.sectionTitle {
+  font-family: var(--font-family-heading, 'Orbitron', monospace);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text, #FFFFFF);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionTitle::before {
+  content: '';
+  width: 4px;
+  height: 24px;
+  background: linear-gradient(135deg, #7C4DFF 0%, #00F5FF 100%);
+  border-radius: 2px;
+}
+
+/* Quick Actions Section */
+.quickActions {
+  margin-bottom: 3rem;
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.actionCard {
+  background: rgba(124, 77, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  text-align: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.actionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.actionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(124, 77, 255, 0.2);
+  border-color: var(--accent-color);
+}
+
+.actionCard:hover::before {
+  transform: scaleX(1);
+}
+
+.actionIcon {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.actionContent {
+  flex: 1;
+}
+
+.actionTitle {
+  font-family: var(--font-family-heading, 'Orbitron', monospace);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text, #FFFFFF);
+  margin: 0 0 0.5rem 0;
+}
+
+.actionDescription {
+  color: var(--color-text-muted, #A3A3B0);
+  line-height: 1.5;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Recent Activity Section */
+.recentActivity {
+  margin-bottom: 3rem;
+}
+
+.activityList {
+  background: rgba(18, 18, 26, 0.8);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.activityItem .activityIcon {
+  background: rgba(124, 77, 255, 0.2);
+  border-radius: 8px;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7C4DFF;
+  flex-shrink: 0;
+}
+
+.activityContent {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.activityTitle {
+  color: var(--color-text, #FFFFFF);
+  font-weight: 500;
+}
+
+.activityTime {
+  color: var(--color-text-muted, #A3A3B0);
+  font-size: 0.85rem;
+}
+
+/* System Status Section */
+.systemStatus {
+  margin-bottom: 2rem;
+}
+
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.statusCard {
+  background: rgba(18, 18, 26, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.statusCard:hover {
+  background: rgba(18, 18, 26, 0.8);
+  border-color: #00F5FF;
+}
+
+.statusIndicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.statusIndicator[data-status="online"] {
+  background: #00F5FF;
+  box-shadow: 0 0 12px rgba(0, 245, 255, 0.5);
+}
+
+.statusIndicator[data-status="warning"] {
+  background: #FF6B35;
+  box-shadow: 0 0 12px rgba(255, 107, 53, 0.5);
+}
+
+.statusIndicator[data-status="offline"] {
+  background: #666;
+}
+
+.statusCard span {
+  color: var(--color-text, #FFFFFF);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboardTitle {
+    font-size: 2rem;
+  }
+  
+  .actionGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .actionCard {
+    padding: 1rem;
+  }
+  
+  .activityContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .statusGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Animation for loading states */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.actionCard:active {
+  transform: translateY(0);
+  transition: transform 0.1s ease;
+}
