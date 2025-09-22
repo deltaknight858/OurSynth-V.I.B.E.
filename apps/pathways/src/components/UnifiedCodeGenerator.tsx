@@ -35,7 +35,7 @@ interface DropdownProps {
 
 interface CodeGeneratorState {
   // Step 1: Define
-  projectType: 'component' | 'page' | 'feature' | 'fullapp';
+  projectType: 'component' | 'page' | 'feature' | 'fullapp' | 'taskflow';
   description: string;
   framework: 'react' | 'vue' | 'angular' | 'nextjs';
   
@@ -241,11 +241,12 @@ function UnifiedCodeGeneratorInternal() {
 function DefineStep({ state, updateState, onNext }: StepProps) {
   const [showAdvanced, setShowAdvanced] = React.useState(false);
   
-  // Simplified to 4 clear project types
+  // Simplified to 5 clear project types
   const projectTypes = [
     { id: 'component', title: 'Component', desc: 'Reusable UI component', icon: '🧩' },
     { id: 'page', title: 'Page', desc: 'Complete web page', icon: '📄' },
     { id: 'feature', title: 'Feature', desc: 'App feature with multiple components', icon: '⚡' },
+    { id: 'taskflow', title: 'TaskFlow', desc: 'Task management capsule with agents', icon: '✅' },
     { id: 'fullapp', title: 'Full App', desc: 'Complete application', icon: '🚀' }
   ];
 
@@ -258,9 +259,8 @@ function DefineStep({ state, updateState, onNext }: StepProps) {
         </p>
       </div>
 
-      {/* Main Project Types - Limited to 4 clear choices */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-        {projectTypes.map(type => (
+      {/* Main Project Types - Updated to 5 clear choices */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">{projectTypes.map(type => (
           <motion.div
             key={type.id}
             whileHover={{ scale: 1.02 }}
@@ -831,6 +831,7 @@ function LivePreview({ state, currentStep }: { state: CodeGeneratorState; curren
                 {state.projectType === 'component' && '🧩'}
                 {state.projectType === 'page' && '📄'}
                 {state.projectType === 'feature' && '⚡'}
+                {state.projectType === 'taskflow' && '✅'}
                 {state.projectType === 'fullapp' && '🚀'}
               </div>
               <h4 className="text-gray-900 font-bold capitalize">{state.projectType}</h4>

@@ -1,6 +1,5 @@
 {
   "/shell/noteflow/page": "app/shell/noteflow/page.js",
-  "/page": "app/page.js",
-  "/shell/page": "app/shell/page.js",
-  "/shell/pathways/page": "app/shell/pathways/page.js"
+  "/shell/taskflow/page": "app/shell/taskflow/page.js",
+  "/shell/page": "app/shell/page.js"
 }

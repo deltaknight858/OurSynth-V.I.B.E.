@@ -1,34 +1,28 @@
 {
   "pages": {
-    "/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/page.css",
-      "static/chunks/app/page.js"
-    ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
     ],
-    "/shell/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/shell/page.css",
-      "static/chunks/app/shell/page.js"
-    ],
-    "/shell/pathways/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/shell/pathways/page.css",
-      "static/chunks/app/shell/pathways/page.js"
-    ],
     "/shell/noteflow/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/shell/noteflow/page.css",
       "static/chunks/app/shell/noteflow/page.js"
+    ],
+    "/shell/taskflow/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/shell/taskflow/page.css",
+      "static/chunks/app/shell/taskflow/page.js"
+    ],
+    "/shell/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/shell/page.css",
+      "static/chunks/app/shell/page.js"
     ]
   }
 }
