@@ -50,6 +50,11 @@ export default function ShellPage() {
             NoteFlow
             <span className={styles.aiTag}>AI</span>
           </a>
+          <a href="/shell/taskflow" className={styles.navItem}>
+            <span>✅</span>
+            TaskFlow
+            <span className={styles.aiTag}>AI</span>
+          </a>
           <a href="/shell/pathways" className={styles.navItem}>
             <span>🛤️</span>
             Pathways
