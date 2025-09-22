@@ -2,7 +2,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import type { MemoryAPI, SemanticResult } from '@/packages/wizard-capsule/src/types' with { "resolution-mode": "import" };
 const inMemoryPromise = import('@/packages/wizard-capsule/src/memory').then(mod => mod.memory);
-import type { MemoryAPI, SemanticResult } from '@/packages/wizard-capsule/src/types';
 import { memory as inMemory } from '@/packages/wizard-capsule/src/memory';
 import '../ui/ui.css';
 

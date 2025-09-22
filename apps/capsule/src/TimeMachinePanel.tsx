@@ -1,7 +1,7 @@
 // PROMOTED from import-staging/apps/app/capsule/TimeMachinePanel.tsx on 2025-09-08T20:34:32.039Z
 // De-MUI'd and aligned with OurSynth UI primitives + CSS utilities.
 import React, { useState } from 'react';
-import { Button } from '../ui/Button';
+import { Button } from '../../ui/Button';
 import '../ui/ui.css';
 
 // Mock Capsule history data

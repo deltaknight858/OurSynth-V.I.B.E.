@@ -2,7 +2,7 @@
 // TODO: Review for token + design lint compliance.
 "use client";
 import React from "react";
-import CommandCenter from "../ai/CommandCenter";
+import CommandCenter from "../../ai/CommandCenter";
 const DashboardLayout: React.FC<{ title?: string; children?: React.ReactNode }> = ({ title, children }) => (
   <div className="layout-edge">
     {title && <h1 className="text-2xl font-bold mb-4">{title}</h1>}

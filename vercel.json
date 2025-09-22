@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "apps/shell/src/AppShell.tsx", "use": "@vercel/node" },
+    { "src": "apps/studio/src/Studio.tsx", "use": "@vercel/node" },
+    { "src": "apps/pathways/src/Pathways.tsx", "use": "@vercel/node" }
+    // Add all panels as needed
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "apps/shell/src/AppShell.tsx" }
+  ]
+}
