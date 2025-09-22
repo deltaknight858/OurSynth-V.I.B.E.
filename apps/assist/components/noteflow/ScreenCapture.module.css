@@ -1,0 +1,10 @@
+.screenCapture {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.capturing {
+  opacity: 0.7;
+  cursor: wait;
+}

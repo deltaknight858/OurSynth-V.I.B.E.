@@ -1,5 +1,9 @@
 'use client';
 import { useState, useEffect } from 'react';
+import { MediaRecorder } from '../../../components/noteflow/MediaRecorder';
+import { ScreenCapture } from '../../../components/noteflow/ScreenCapture';
+import { VoiceCommandManager } from '../../../components/noteflow/VoiceCommandManager';
+import { voiceCommandService } from '../../../lib/services/voiceCommandService';
 import styles from './NoteFlow.module.css';
 
 interface MemoryNote {
@@ -131,6 +135,89 @@ export default function NoteFlowPage() {
     );
   };
 
+  // Multimedia handlers
+  const handleAudioRecording = async (blob: Blob) => {
+    try {
+      // Create a URL for the audio blob
+      const audioUrl = URL.createObjectURL(blob);
+      const timestamp = new Date().toISOString();
+      
+      const audioAttachment: MediaAttachment = {
+        id: `audio-${Date.now()}`,
+        kind: 'audio',
+        url: audioUrl,
+        mime: blob.type,
+        meta: { 
+          size: blob.size,
+          duration: 0, // Would be calculated in real implementation
+          createdAt: timestamp
+        }
+      };
+
+      // Add audio note
+      const audioNote: MemoryNote = {
+        id: Date.now().toString(),
+        content: `🎤 Audio Recording - ${new Date().toLocaleTimeString()}`,
+        timestamp: new Date(),
+        tags: ['audio', 'voice-recording'],
+        attachments: [audioAttachment]
+      };
+
+      setNotes(prev => [audioNote, ...prev]);
+      console.log('Audio recording added to notes');
+    } catch (error) {
+      console.error('Error handling audio recording:', error);
+    }
+  };
+
+  const handleScreenCapture = async (blob: Blob) => {
+    try {
+      const imageUrl = URL.createObjectURL(blob);
+      const timestamp = new Date().toISOString();
+      
+      const imageAttachment: MediaAttachment = {
+        id: `screen-${Date.now()}`,
+        kind: 'image',
+        url: imageUrl,
+        mime: blob.type,
+        meta: {
+          size: blob.size,
+          createdAt: timestamp,
+          captureType: 'screen'
+        }
+      };
+
+      const screenNote: MemoryNote = {
+        id: Date.now().toString(),
+        content: `📸 Screen Capture - ${new Date().toLocaleTimeString()}`,
+        timestamp: new Date(),
+        tags: ['screenshot', 'visual'],
+        attachments: [imageAttachment]
+      };
+
+      setNotes(prev => [screenNote, ...prev]);
+      console.log('Screen capture added to notes');
+    } catch (error) {
+      console.error('Error handling screen capture:', error);
+    }
+  };
+
+  const handleVoiceCommand = async (command?: any) => {
+    if (!command) return;
+    
+    try {
+      const result = await voiceCommandService.executeCommand(
+        command, 
+        'current-user', // Would come from auth context in real app
+        notes,
+        setNotes
+      );
+      console.log('Voice command result:', result);
+    } catch (error) {
+      console.error('Error executing voice command:', error);
+    }
+  };
+
   return (
     <div className={styles.container}>
       {/* Header */}
@@ -187,6 +274,14 @@ export default function NoteFlowPage() {
                   rows={3}
                 />
                 <div className={styles.inputActions}>
+                  <div className={styles.multimediaControls}>
+                    <MediaRecorder onRecordingComplete={handleAudioRecording} />
+                    <ScreenCapture onCapture={handleScreenCapture} />
+                    <VoiceCommandManager 
+                      userId="current-user" 
+                      onCommandExecuted={handleVoiceCommand}
+                    />
+                  </div>
                   <button 
                     className={styles.addButton}
                     onClick={handleAddNote}
@@ -248,6 +343,35 @@ export default function NoteFlowPage() {
                   <div key={note.id} className={styles.noteCard}>
                     <div className={styles.noteContent}>
                       <p className={styles.noteText}>{note.content}</p>
+                      
+                      {/* Display attachments */}
+                      {note.attachments && note.attachments.length > 0 && (
+                        <div className={styles.attachments}>
+                          {note.attachments.map(attachment => (
+                            <div key={attachment.id} className={styles.attachment}>
+                              {attachment.kind === 'image' && (
+                                <img src={attachment.url} alt="Attachment" />
+                              )}
+                              {attachment.kind === 'audio' && (
+                                <audio controls src={attachment.url}>
+                                  Your browser does not support audio playback.
+                                </audio>
+                              )}
+                              {attachment.kind === 'video' && (
+                                <video controls width="200" src={attachment.url}>
+                                  Your browser does not support video playback.
+                                </video>
+                              )}
+                              {attachment.kind === 'file' && (
+                                <div className={styles.attachmentIcon}>
+                                  📄
+                                </div>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      )}
+                      
                       <div className={styles.noteMeta}>
                         <span className={styles.noteTime}>
                           {note.timestamp.toLocaleString()}

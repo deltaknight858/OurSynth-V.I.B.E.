@@ -2,9 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/notes": "pages/notes.js",
-  "/capsules": "pages/capsules.js",
-  "/aether": "pages/aether.js",
   "/": "pages/index.js",
-  "/studio": "pages/studio.js"
+  "/notebooks": "pages/notebooks.js",
+  "/aether": "pages/aether.js"
 }
