@@ -1,38 +1,5 @@
 {
-  "name": "@oursynth/core",
-  "version": "1.0.0",
-  "description": "OurSynth Core UI Components - Halo Design System",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    }
-  },
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
-    "clean": "rm -rf dist"
-  },
-  "dependencies": {
-    "clsx": "^2.1.1",
-    "framer-motion": "^12.23.12"
-  },
-  "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/react": "^18.2.52",
-    "@types/react-dom": "^18.2.18",
-    "typescript": "^5.4.5"
-  },
-  "keywords": ["ui", "components", "design-system", "halo", "oursynth"],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/deltaknight858/OurSynth"
-  },
-  "files": ["dist"]
+  "name": "@oursynth/halo-ui",
+  "version": "0.1.0",
+  "private": true
 }

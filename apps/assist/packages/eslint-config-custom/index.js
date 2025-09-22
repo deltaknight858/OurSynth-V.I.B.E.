@@ -1,8 +1,0 @@
-module.exports = {
-  extends: ["next/core-web-vitals", "eslint:recommended"],
-  parser: "@typescript-eslint/parser",
-  plugins: ["@typescript-eslint"],
-  rules: {
-    "react/no-unescaped-entities": "off"
-  }
-};

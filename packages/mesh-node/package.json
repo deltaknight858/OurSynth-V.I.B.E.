@@ -1,19 +1,5 @@
 {
   "name": "@oursynth/mesh-node",
   "version": "0.1.0",
-  "private": true,
-  "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup src/index.ts --dts --format esm,cjs --splitting false --clean"
-  },
-  "dependencies": {
-    "multicast-dns": "^7.2.5"
-  },
-  "devDependencies": {
-    "@types/multicast-dns": "^7.2.4",
-    "tsup": "^8.1.0"
-  }
+  "private": true
 }

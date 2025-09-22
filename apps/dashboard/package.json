@@ -1,17 +1,5 @@
 {
   "name": "dashboard",
   "version": "0.1.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "tsc:noEmit": "tsc --noEmit"
-  },
-  "dependencies": {
-  "@supabase/supabase-js": "^2.57.2"
-  },
-  "devDependencies": {}
+  "private": true
 }
