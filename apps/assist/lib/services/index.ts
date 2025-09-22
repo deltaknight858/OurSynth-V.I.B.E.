@@ -16,7 +16,4 @@ export { voiceCommandService } from './voiceCommandService';
 export { wizardContextRegistry } from './wizardContextRegistry';
 
 // Service registry (recommended way to access services)
-export { serviceRegistry } from './serviceRegistry';
-
-// Convenience re-exports
-export default serviceRegistry;
+export { serviceRegistry, default as defaultServiceRegistry } from './serviceRegistry';
