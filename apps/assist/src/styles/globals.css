@@ -1,0 +1,195 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;700;900&display=swap');
+
+@layer base {
+  :root {
+    /* V.I.B.E. Light Theme (for compatibility) */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 198 93% 60%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 198 93% 60%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 198 93% 60%;
+    --radius: 0.75rem;
+    
+    /* V.I.B.E. Glass/Neon Variables */
+    --glass-bg: rgba(30, 41, 59, 0.9);
+    --glass-border: rgba(148, 163, 184, 0.2);
+    --neon-cyan: 6 182 212;
+    --neon-purple: 139 92 246;
+    --neon-pink: 236 72 153;
+    --neon-green: 16 185 129;
+    --neon-orange: 249 115 22;
+  }
+
+  .dark {
+    /* V.I.B.E. Dark Theme (Primary) */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 3.7% 15.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 3.7% 15.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 198 93% 60%;
+    --primary-foreground: 240 10% 3.9%;
+    --secondary: 262 83% 58%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 198 93% 60%;
+    --accent-foreground: 240 10% 3.9%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 198 93% 60%;
+    --code-bg: 240 3.7% 15.9%;
+    --code-fg: 198 93% 70%;
+    
+    /* V.I.B.E. Glass Effects */
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+    --backdrop-blur: blur(10px);
+    
+    /* V.I.B.E. Neon Effects */
+    --neon-cyan: 198 93% 60%;
+    --neon-purple: 262 83% 58%;
+    --neon-orange: 25 95% 53%;
+    --neon-glow: 0 0 20px;
+    --neon-glow-hover: 0 0 30px;
+    
+    /* V.I.B.E. Animation */
+    --transition-glass: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-pulse: pulse 2s infinite;
+    --animation-float: float 6s ease-in-out infinite;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* V.I.B.E. Glass Morphism Utilities */
+.glass {
+  background: var(--glass-bg);
+  backdrop-filter: var(--backdrop-blur);
+  -webkit-backdrop-filter: var(--backdrop-blur);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  transition: var(--transition-glass);
+}
+
+.glass-card {
+  @apply glass rounded-lg p-6;
+}
+
+.glass-button {
+  @apply glass rounded-md px-4 py-2;
+}
+
+.glass-button:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-1px);
+}
+
+/* V.I.B.E. Neon Effects */
+.neon-cyan {
+  color: hsl(var(--neon-cyan));
+  text-shadow: 0 0 10px hsl(var(--neon-cyan) / 0.5);
+}
+
+.neon-purple {
+  color: hsl(var(--neon-purple));
+  text-shadow: 0 0 10px hsl(var(--neon-purple) / 0.5);
+}
+
+.neon-orange {
+  color: hsl(var(--neon-orange));
+  text-shadow: 0 0 10px hsl(var(--neon-orange) / 0.5);
+}
+
+.neon-glow {
+  box-shadow: var(--neon-glow) hsl(var(--primary) / 0.3);
+  transition: var(--transition-glass);
+}
+
+.neon-glow:hover {
+  box-shadow: var(--neon-glow-hover) hsl(var(--primary) / 0.5);
+}
+
+/* V.I.B.E. Animations */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-pulse-vibe {
+  animation: var(--animation-pulse);
+}
+
+.animate-float {
+  animation: var(--animation-float);
+}
+
+/* V.I.B.E. Gradient Text */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    hsl(var(--neon-cyan)) 0%,
+    hsl(var(--neon-purple)) 50%,
+    hsl(var(--neon-orange)) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: linear-gradient(
+    135deg,
+    hsl(var(--neon-cyan)) 0%,
+    hsl(var(--neon-purple)) 50%,
+    hsl(var(--neon-orange)) 100%
+  );
+  border-radius: inherit;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: xor;
+  -webkit-mask-composite: xor;
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Welcome to V.I.B.E.",
+    "content": "Your first memory capsule in the Virtual Identity & Build Environment.",
+    "category": "onboarding",
+    "tags": [
+      "welcome",
+      "getting-started"
+    ]
+  },
+  {
+    "title": "Glass/Neon Design System",
+    "content": "Key principles: translucent surfaces, neon accents, smooth animations.",
+    "category": "design",
+    "tags": [
+      "design-system",
+      "ui",
+      "glass-morphism"
+    ]
+  },
+  {
+    "title": "Agent Architecture",
+    "content": "Agents are executable logic units orchestrated through event bus.",
+    "category": "development",
+    "tags": [
+      "ai",
+      "agents",
+      "architecture"
+    ]
+  }
+]

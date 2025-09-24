@@ -1,0 +1,42 @@
+{
+  "name": "@oursynth/vibe",
+  "version": "0.1.0",
+  "description": "Virtual Identity & Build Environment - A modular, cinematic platform for design systems and AI-driven workflows",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:assist": "cd apps/assist && npm run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "type-check": "turbo run type-check",
+    "storybook": "cd packages/storybook && pnpm storybook",
+    "setup": "pnpm install && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0",
+    "turbo": "^1.10.0",
+    "typescript": "^5.0.0"
+  },
+  "packageManager": "pnpm@8.0.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "keywords": [
+    "monorepo",
+    "design-system",
+    "ai-agents",
+    "workflow-automation",
+    "contributor-tools",
+    "virtual-identity",
+    "build-environment"
+  ],
+  "author": "OurSynth",
+  "license": "MIT"
+}

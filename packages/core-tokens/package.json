@@ -1,0 +1,23 @@
+{
+  "name": "@vibe/core-tokens",
+  "version": "0.1.0",
+  "description": "Design tokens for the VIBE design system - colors, spacing, typography",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "files": [
+    "dist",
+    "tokens.json"
+  ],
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}

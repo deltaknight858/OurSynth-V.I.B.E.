@@ -1,0 +1,30 @@
+{
+  "name": "@vibe/halo-ui",
+  "version": "0.1.0",
+  "description": "Glass/neon UI primitives for the VIBE design system",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "react": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
