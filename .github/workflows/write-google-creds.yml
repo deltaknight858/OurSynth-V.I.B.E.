@@ -1,0 +1,22 @@
+name: Write Google Credentials
+
+on:
+  workflow_dispatch:
+
+jobs:
+  write-creds:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Write Google credentials
+        env:
+          GOOGLE_APPLICATION_CREDENTIALS_JSON: ${{ secrets.GOOGLE_APPLICATION_CREDENTIALS_JSON }}
+        run: |
+          echo "$GOOGLE_APPLICATION_CREDENTIALS_JSON" > "$HOME/gcloud-key.json"
+          echo "GOOGLE_APPLICATION_CREDENTIALS=$HOME/gcloud-key.json" >> $GITHUB_ENV
+
+      - name: "Example: show file path"
+        run: |
+          echo "GCP creds written to: $HOME/gcloud-key.json"

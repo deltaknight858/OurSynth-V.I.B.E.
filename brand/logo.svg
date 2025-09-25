@@ -1,0 +1,12 @@
+<!-- Primary Logo: Robot mascot + "OurSynth" wordmark (placeholder) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="48" viewBox="0 0 180 48">
+  <rect width="180" height="48" rx="12" fill="#181F2B"/>
+  <g>
+    <circle cx="32" cy="24" r="16" fill="#00FFE0" stroke="#181F2B" stroke-width="3"/>
+    <rect x="19" y="11" width="7" height="2.5" rx="1.2" fill="#fff"/>
+    <rect x="38" y="11" width="7" height="2.5" rx="1.2" fill="#fff"/>
+    <circle cx="28" cy="28" r="2.5" fill="#181F2B"/>
+    <circle cx="36" cy="28" r="2.5" fill="#181F2B"/>
+  </g>
+  <text x="60" y="32" font-size="28" fill="#00FFE0" font-family="sans-serif" font-weight="bold">OurSynth</text>
+</svg>

@@ -1,0 +1,17 @@
+/*
+  CSS Module for the FocusRing component.
+  Uses CSS variables which should be mapped to the project's design tokens.
+*/
+.target {
+  /* The element that will receive the focus ring. */
+  position: relative;
+  border-radius: var(--radius-md); /* Use radius token */
+}
+
+.target:focus-visible,
+.target:focus-within {
+  /* Using a pseudo-element for the ring to avoid affecting the layout of the child. */
+  outline: none;
+  box-shadow: 0 0 0 var(--space-xxs) var(--color-focus-outline, #000),
+    0 0 0 var(--space-xs) var(--color-accent-primary, #7b00ff);
+}

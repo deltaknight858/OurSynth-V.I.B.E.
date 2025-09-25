@@ -1,0 +1,6 @@
+{
+  "depth.shadow.raised": "-4px -4px 8px rgba(255,255,255,0.06), 4px 4px 10px rgba(0,0,0,0.55)",
+  "depth.shadow.inset": "inset 3px 3px 6px rgba(0,0,0,0.6), inset -3px -3px 6px rgba(255,255,255,0.05)",
+  "depth.ring.focus": "0 0 0 2px rgba(123,0,255,0.55)",
+  "depth.glow.accent": "0 0 12px 3px rgba(123,0,255,0.55)"
+}

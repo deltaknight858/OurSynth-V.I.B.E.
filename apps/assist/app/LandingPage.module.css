@@ -1,0 +1,310 @@
+.landingRoot {
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', sans-serif;
+  position: relative;
+}
+.backgroundGlow {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(circle, rgba(124,77,255,0.08), transparent 60%);
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+  z-index: -1;
+  animation: pulse 10s infinite alternate;
+}
+@keyframes pulse {
+  0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.7; }
+  100% { transform: translate(-50%, -50%) scale(1.2); opacity: 1; }
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 5%;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.nav a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: var(--color-brand);
+}
+.ctaButtonSm, .ctaButtonLg {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+.ctaButtonSm {
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+}
+.ctaButtonSm:hover {
+  background-color: var(--color-brand);
+  color: var(--color-bg);
+  box-shadow: 0 0 15px var(--color-brand);
+}
+.ctaButtonLg {
+  padding: 1rem 2.5rem;
+  background: var(--color-brand);
+  color: var(--color-bg);
+  box-shadow: 0 0 20px rgba(124,77,255,0.2);
+}
+.ctaButtonLg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 30px rgba(124,77,255,0.4);
+}
+.hero {
+  text-align: center;
+  padding: 8rem 2rem 4rem 2rem;
+}
+.heroContent {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.tagline {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: rgba(124,77,255,0.1);
+  border: 1px solid rgba(124,77,255,0.3);
+  border-radius: 20px;
+  color: var(--color-brand);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+}
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2rem;
+}
+.heroCta {
+  margin-top: 2rem;
+}
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  padding: 2rem 5%;
+  margin-top: 2rem;
+}
+.featureCard {
+  background: var(--glass-background, rgba(20,22,36,0.6));
+  border: 1px solid var(--glass-border, rgba(124,77,255,0.2));
+  box-shadow: var(--glass-shadow, 0 0 40px rgba(124,77,255,0.08));
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  color: var(--color-text);
+  transition: box-shadow 0.3s;
+}
+.featureCard:hover {
+  box-shadow: 0 0 32px var(--color-brand);
+}
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.footer {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  color: var(--color-text-muted);
+}
+.footerLinks {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.footerLinks a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+.footerLinks a:hover {
+  color: var(--color-brand);
+}
+
+.socialProof {
+  padding: 3rem 5% 2rem;
+  text-align: center;
+}
+
+.builtWith {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.cyanAccent {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+
+.founderQuote {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  font-style: italic;
+  color: var(--color-text);
+  border-left: 4px solid var(--color-brand);
+  padding-left: 1.5rem;
+}
+
+.founderQuote cite {
+  display: block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.pricingPreview {
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.pricingPreview h3 {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.pricingTiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.tier {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.tier strong {
+  color: white;
+  font-size: 1.25rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tier span {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.comingSoon {
+  background: linear-gradient(135deg, var(--color-brand), var(--color-secondary));
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.marketplaceTeaser {
+  padding: 2rem 5%;
+  text-align: center;
+}
+
+.marketplaceTeaser h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.marketplaceTeaser p {
+  color: var(--color-text-muted);
+  font-size: 1rem;
+}
+
+.waitlistForm {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1.5rem;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.waitlistForm input {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: white;
+  font-size: 0.875rem;
+}
+
+.waitlistForm input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.waitlistForm button {
+  padding: 0.75rem 1.5rem;
+  background: var(--color-brand);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.waitlistForm button:hover {
+  background: #6d3bff;
+  transform: translateY(-1px);
+}
+
+.learnMore {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  display: inline-block;
+  transition: color 0.2s;
+}
+
+.learnMore:hover {
+  color: #6d3bff;
+}

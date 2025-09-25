@@ -1,0 +1,10 @@
+{
+  "rules": [
+    "No hard-coded design values: only tokens",
+    "All colors, spacing, and typography pulled from tokens",
+    "SVGs must be optimized & registered",
+    "Agents interactions must log provenance events",
+    "All new primitives documented in canonical docs first"
+  ],
+  "statusTags": ["PLANNED", "IN-PROGRESS", "MVP", "STABLE", "DEPRECATED"]
+}

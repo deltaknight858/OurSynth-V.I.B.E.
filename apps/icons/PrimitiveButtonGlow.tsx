@@ -1,0 +1,8 @@
+/** Auto-generated from primitive-button-glow.svg. DO NOT EDIT DIRECTLY. */
+import * as React from 'react';
+export interface IconProps extends React.SVGProps<SVGSVGElement> { size?: number; title?: string; }
+export const PrimitiveButtonGlow: React.FC<IconProps> = ({ size = 24, title = 'PrimitiveButtonGlow', ...props }) => (
+  <svg role="img" width={size} height={size} aria-label={title} viewBox="0 0 220 64" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="btn-surface" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1320"/><stop offset="1" stop-color="#0A0F1A"/></linearGradient><linearGradient id="btn-stroke" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5CE3FF"/><stop offset="1" stop-color="#8A5CFF"/></linearGradient><radialGradient id="btn-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(110 32) scale(120 36)"><stop offset="0" stop-color="#6DE1FF" stop-opacity="0.9"/><stop offset="1" stop-color="#6DE1FF" stop-opacity="0"/></radialGradient><filter id="glow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="12"/></filter></defs><!--Outer neon aura--><rect x="6" y="8" width="208" height="48" rx="14" fill="currentColor" filter="url(#glow)"/><!--Button body--><rect x="4" y="6" width="212" height="52" rx="16" fill="currentColor" stroke="url(#btn-stroke)" stroke-width="2"/><!--Inner sheen--><rect x="8" y="10" width="204" height="18" rx="9" fill="currentColor" opacity="0.08"/><!--Label--><text x="110" y="39" fill="currentColor" font-size="16" font-family="Inter, ui-sans-serif, system-ui" text-anchor="middle">
+    Get started
+  </text></svg>
+);

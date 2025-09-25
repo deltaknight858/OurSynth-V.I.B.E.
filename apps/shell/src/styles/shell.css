@@ -1,0 +1,108 @@
+/* OurSynth-Eco Shell Styles (Halo UI theme) */
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+  background: #181c24;
+  color: #e3e8f9;
+}
+
+.shell-layout {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #181c24;
+}
+
+.halo-sidebar {
+  width: 72px;
+  min-width: 72px;
+  background: #232b3a;
+  box-shadow: 2px 0 12px #10131b44;
+  border-right: 1px solid #2e3650;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.shell-main {
+  flex: 1;
+  background: #181c24;
+  padding: 0;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: 1em;
+  color: #aeb8d4;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-nav-item.active,
+.sidebar-nav-item:hover {
+  background: #2e3650;
+  color: #fff;
+}
+
+.halo-card {
+  background: #232b3a;
+  border-radius: 16px;
+  box-shadow: 0 2px 18px #10131b30;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.halo-btn {
+  background: #4683ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #10131b22;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.halo-btn:hover {
+  background: #305fd8;
+  box-shadow: 0 4px 16px #4683ff25;
+}
+
+.halo-icon {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.text-xl { font-size: 1.3em; }
+.font-bold { font-weight: bold; }
+.font-semibold { font-weight: 600; }
+.text-muted { color: #8b98b6; }
+.bg-shell { background: #181c24; }
+.bg-main { background: #181c24; }
+.bg-shell-accent { background: #2e3650; }
+
+.p-6 { padding: 2em; }
+.mb-4 { margin-bottom: 1.5em; }
+.mt-4 { margin-top: 1.2em; }
+.mt-6 { margin-top: 2em; }
+.rounded-xl { border-radius: 16px; }
+.rounded { border-radius: 8px; }
+.shadow-lg { box-shadow: 0 8px 32px #10131b40; }
+.shadow { box-shadow: 0 2px 16px #10131b20; }
+
+@media (max-width: 800px) {
+  .shell-layout { flex-direction: column; }
+  .halo-sidebar { width: 100vw; min-width: 0; flex-direction: row; }
+  .shell-main { padding: 1em; }
+}

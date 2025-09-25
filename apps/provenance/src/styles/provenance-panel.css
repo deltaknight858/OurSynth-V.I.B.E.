@@ -1,0 +1,14 @@
+/* Provenance Panel — Audit timeline styles */
+.provenance-panel {
+  background: var(--eco-bg);
+  min-height: 100vh;
+}
+
+.provenance-panel h2 {
+  color: var(--eco-accent-purple);
+}
+
+.provenance-panel .halo-card {
+  border-left: 4px solid var(--eco-accent-purple);
+  margin-bottom: 2em;
+}

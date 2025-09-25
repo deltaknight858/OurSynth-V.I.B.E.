@@ -1,0 +1,6 @@
+<!-- Warning: Neon exclamation -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+  <circle cx="16" cy="16" r="13" fill="none" stroke="#FFD800" stroke-width="2"/>
+  <rect x="15" y="8" width="2" height="12" rx="1" fill="#FFD800"/>
+  <circle cx="16" cy="25" r="1.5" fill="#FFD800"/>
+</svg>

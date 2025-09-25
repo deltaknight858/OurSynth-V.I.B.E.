@@ -1,0 +1,20 @@
+/* Pathways Panel — Wizard custom styles */
+.pathways-panel {
+  background: var(--eco-bg);
+  min-height: 100vh;
+}
+
+.pathways-panel h2 {
+  color: var(--eco-accent-purple);
+}
+
+.pathways-panel .halo-card {
+  border-left: 4px solid var(--eco-accent-purple);
+  margin-bottom: 2em;
+}
+
+.pathways-panel .wizard-step {
+  padding: 1em 0;
+  font-size: 1.1em;
+  color: var(--eco-accent-purple);
+}

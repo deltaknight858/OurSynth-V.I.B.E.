@@ -1,0 +1,25 @@
+/* Studio Panel — Visual Builder custom styles */
+.studio-panel {
+  background: var(--eco-bg);
+  min-height: 100vh;
+}
+
+.studio-panel h2 {
+  color: var(--eco-accent-blue);
+}
+
+.studio-panel .canvas {
+  background: #181c24;
+  border: 2px dashed var(--eco-accent-blue);
+  min-height: 320px;
+  border-radius: var(--eco-radius-xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--eco-fg-muted);
+  font-size: 1.1em;
+}
+
+.studio-panel .halo-card {
+  margin-bottom: 2em;
+}

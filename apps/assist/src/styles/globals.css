@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Orbitron:wght@400;700;900&display=swap');
 
 @layer base {
@@ -80,6 +81,56 @@
     --transition-glass: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --animation-pulse: pulse 2s infinite;
     --animation-float: float 6s ease-in-out infinite;
+=======
+@layer base {
+  :root {
+    --background: 240 50% 99%;
+    --foreground: 224 71.4% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 224 71.4% 4.1%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 84% 96%;
+    --secondary-foreground: 220 84% 14%;
+    --muted: 220 84% 96%;
+    --muted-foreground: 220 84% 46%;
+    --accent: 262 83% 96%;
+    --accent-foreground: 262 83% 28%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 262 83% 58%;
+    --radius: 0.75rem;
+    --code-bg: 240 50% 98%;
+    --code-fg: 262 83% 58%;
+  }
+
+  .dark {
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 40% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 40% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 220 84% 12%;
+    --secondary-foreground: 220 84% 96%;
+    --muted: 220 84% 12%;
+    --muted-foreground: 220 84% 64%;
+    --accent: 262 83% 20%;
+    --accent-foreground: 262 83% 96%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 13% 16%;
+    --input: 220 13% 16%;
+    --ring: 262 83% 58%;
+    --code-bg: 224 71.4% 8%;
+    --code-fg: 262 83% 68%;
+>>>>>>> main
   }
 }
 
@@ -92,6 +143,7 @@
     font-feature-settings: "rlig" 1, "calt" 1;
   }
 }
+<<<<<<< HEAD
 
 /* V.I.B.E. Glass Morphism Utilities */
 .glass {
@@ -193,3 +245,5 @@
   mask-composite: xor;
   -webkit-mask-composite: xor;
 }
+=======
+>>>>>>> main

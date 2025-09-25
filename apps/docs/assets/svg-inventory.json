@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2025-09-08T21:00:28.940Z",
+  "count": 19,
+  "items": [
+    {
+      "file": "brand/command-center-icon.svg"
+    },
+    {
+      "file": "brand/glow-pulse-hover.svg"
+    },
+    {
+      "file": "brand/history-icon.svg"
+    },
+    {
+      "file": "brand/home-icon.svg"
+    },
+    {
+      "file": "brand/icon.svg"
+    },
+    {
+      "file": "brand/logo.svg"
+    },
+    {
+      "file": "brand/logomark-orbital-s.svg"
+    },
+    {
+      "file": "brand/particles-bg.svg"
+    },
+    {
+      "file": "brand/pathways-hero.svg"
+    },
+    {
+      "file": "brand/preview-icon.svg"
+    },
+    {
+      "file": "brand/primitive-button-glow.svg"
+    },
+    {
+      "file": "brand/primitive-button-rise.svg"
+    },
+    {
+      "file": "brand/primitive-panel.svg"
+    },
+    {
+      "file": "brand/primitive-scroll-area-horizontal.svg"
+    },
+    {
+      "file": "brand/primitive-scroll-area-vertical.svg"
+    },
+    {
+      "file": "brand/success-icon.svg"
+    },
+    {
+      "file": "brand/wizard-reveal.svg"
+    },
+    {
+      "file": "brand/wordmark-placeholder.svg"
+    },
+    {
+      "file": "brand/workspace-icon.svg"
+    }
+  ]
+}

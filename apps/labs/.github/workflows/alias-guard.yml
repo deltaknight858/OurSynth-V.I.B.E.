@@ -1,0 +1,20 @@
+name: alias-guard
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+jobs:
+  validate-aliases:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 9
+      - name: Install
+        run: pnpm install --frozen-lockfile
+      - name: Validate aliases
+        run: pnpm alias:ci

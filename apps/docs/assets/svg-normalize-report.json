@@ -1,0 +1,162 @@
+{
+  "summary": {
+    "generatedAt": "2025-09-08T21:00:30.184Z",
+    "total": 19,
+    "changed": 0,
+    "bytesSaved": 0
+  },
+  "results": [
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\command-center-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 318,
+        "after": 318
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\glow-pulse-hover.svg",
+      "changed": false,
+      "bytes": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\history-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 250,
+        "after": 250
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\home-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 242,
+        "after": 242
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 2849,
+        "after": 2849
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\logo.svg",
+      "changed": false,
+      "bytes": {
+        "before": 3585,
+        "after": 3585
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\logomark-orbital-s.svg",
+      "changed": false,
+      "bytes": {
+        "before": 848,
+        "after": 848
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\particles-bg.svg",
+      "changed": false,
+      "bytes": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\pathways-hero.svg",
+      "changed": false,
+      "bytes": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\preview-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 244,
+        "after": 244
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\primitive-button-glow.svg",
+      "changed": false,
+      "bytes": {
+        "before": 1287,
+        "after": 1287
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\primitive-button-rise.svg",
+      "changed": false,
+      "bytes": {
+        "before": 1131,
+        "after": 1131
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\primitive-panel.svg",
+      "changed": false,
+      "bytes": {
+        "before": 1411,
+        "after": 1411
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\primitive-scroll-area-horizontal.svg",
+      "changed": false,
+      "bytes": {
+        "before": 917,
+        "after": 917
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\primitive-scroll-area-vertical.svg",
+      "changed": false,
+      "bytes": {
+        "before": 915,
+        "after": 915
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\success-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 256,
+        "after": 256
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\wizard-reveal.svg",
+      "changed": false,
+      "bytes": {
+        "before": 0,
+        "after": 0
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\wordmark-placeholder.svg",
+      "changed": false,
+      "bytes": {
+        "before": 514,
+        "after": 514
+      }
+    },
+    {
+      "file": "C:\\Users\\davos\\Desktop\\OurSynth\\assets\\brand\\workspace-icon.svg",
+      "changed": false,
+      "bytes": {
+        "before": 271,
+        "after": 271
+      }
+    }
+  ]
+}

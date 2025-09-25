@@ -1,0 +1,6 @@
+{
+  "name": "@oursynth/components-system",
+  "version": "1.0.0",
+  "main": "HaloButton.tsx",
+  "license": "MIT"
+}

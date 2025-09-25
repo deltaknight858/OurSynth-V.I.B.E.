@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "@vibe/capsule",
   "version": "0.1.0",
   "description": "Capsule schema definitions for VIBE knowledge system",
@@ -21,3 +22,9 @@
     "access": "restricted"
   }
 }
+=======
+  "name": "@oursynth/capsule",
+  "version": "0.1.0",
+  "private": true
+}
+>>>>>>> main

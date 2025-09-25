@@ -1,4 +1,5 @@
 # Dependencies
+<<<<<<< HEAD
 node_modules/
 .pnpm-store/
 
@@ -23,6 +24,48 @@ build/
 # OS files
 .DS_Store
 Thumbs.db
+=======
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Next.js build output
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Production builds
+build/
+dist/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs
+>>>>>>> main
 *.log
 
 # Cache directories
@@ -30,6 +73,7 @@ Thumbs.db
 .parcel-cache/
 .eslintcache
 
+<<<<<<< HEAD
 # Runtime files
 *.pid
 *.seed
@@ -64,3 +108,15 @@ terraform.tfvars
 # Generated files
 generated/
 auto-generated/
+=======
+# Temporary files
+*.tmp
+*.temp
+
+# Package manager lock files (keep package-lock.json but ignore others)
+yarn.lock
+pnpm-lock.yaml
+
+apps/assist/vertex-ai-credentials.json
+apps/assist/public/this-project-7450e-firebase-adminsdk-fbsvc-*.json
+>>>>>>> main

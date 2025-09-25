@@ -1,0 +1,1027 @@
+/* NoteFlow Memory Agent Styles */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 2rem;
+  border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+  background: var(--color-surface);
+}
+
+.headerContent {
+  flex: 1;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  background: linear-gradient(135deg, var(--color-brand) 0%, #9c6aff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.badge {
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Navigation Tabs */
+.tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+  background: var(--color-surface);
+  padding: 0 2rem;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border-bottom: 2px solid transparent;
+}
+
+.tab:hover {
+  color: var(--color-text);
+  background: rgba(124, 77, 255, 0.05);
+}
+
+.tabActive {
+  color: var(--color-brand);
+  border-bottom-color: var(--color-brand);
+  background: rgba(124, 77, 255, 0.1);
+}
+
+.tabIcon {
+  font-size: 1rem;
+}
+
+/* Content */
+.content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Note Input */
+.noteInput {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 80px;
+  padding: 1rem;
+  background: var(--color-bg);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-family: inherit;
+  font-size: 0.875rem;
+  resize: vertical;
+  transition: border-color 0.2s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 2px rgba(124, 77, 255, 0.1);
+}
+
+.textarea::placeholder {
+  color: var(--color-text-muted);
+}
+
+.inputActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.multimediaControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.addButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--color-brand);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.addButton:hover {
+  background: #6b3acc;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-elev-1);
+}
+
+.addButton:disabled {
+  background: var(--color-text-muted);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.buttonIcon {
+  font-size: 0.875rem;
+}
+
+.inputHint {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Tag Filter */
+.tagFilter {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.filterHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.filterLabel {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.clearTags {
+  background: none;
+  border: none;
+  color: var(--color-brand);
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagButton {
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tagButton:hover {
+  background: rgba(124, 77, 255, 0.2);
+}
+
+.tagSelected {
+  background: var(--color-brand);
+  color: white;
+  border-color: var(--color-brand);
+}
+
+/* Notes List */
+.notesList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.noteCard {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(124, 77, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+.noteCard:hover {
+  border-color: rgba(124, 77, 255, 0.3);
+  box-shadow: var(--shadow-elev-1);
+}
+
+.noteContent {
+  flex: 1;
+}
+
+.noteText {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0 0 1rem 0;
+}
+
+.noteMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.noteTime {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.noteTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.noteTag {
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.625rem;
+  font-weight: 500;
+}
+
+.noteActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Multimedia attachments */
+.attachments {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.attachment {
+  position: relative;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--color-bg);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+}
+
+.attachment img {
+  max-width: 200px;
+  max-height: 150px;
+  object-fit: cover;
+  display: block;
+}
+
+.attachment audio {
+  width: 200px;
+}
+
+.attachmentIcon {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--color-brand);
+  background: rgba(124, 77, 255, 0.05);
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.actionButton:hover {
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-text-muted);
+}
+
+.emptyIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.emptyState h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.emptyState p {
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Mindmap View */
+.mindmapView {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mindmapHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  color: var(--color-text);
+}
+
+.mindmapControls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.controlButton {
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.controlButton:hover {
+  background: rgba(124, 77, 255, 0.2);
+}
+
+.mindmapContainer {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(124, 77, 255, 0.1);
+  min-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.mindmapPlaceholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  padding: 2rem;
+}
+
+.mindmapDemo {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.memoryNode {
+  position: absolute;
+  background: linear-gradient(135deg, var(--color-brand) 0%, #9c6aff 100%);
+  border-radius: var(--radius-lg);
+  padding: 1rem;
+  min-width: 180px;
+  color: white;
+  box-shadow: var(--shadow-elev-2);
+  animation: nodeFloat 3s ease-in-out infinite;
+}
+
+/* Position nodes based on their index using CSS */
+.memoryNode[data-node-index="0"] {
+  left: 20px;
+  top: 100px;
+}
+
+.memoryNode[data-node-index="1"] {
+  left: 220px;
+  top: 150px;
+}
+
+@keyframes nodeFloat {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.nodeContent {
+  text-align: center;
+}
+
+.nodeTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.nodeSummary {
+  font-size: 0.75rem;
+  opacity: 0.9;
+  margin: 0 0 0.5rem 0;
+}
+
+.nodeStats {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.625rem;
+  opacity: 0.8;
+}
+
+.mindmapInfo {
+  text-align: center;
+  max-width: 400px;
+}
+
+.mindmapInfo h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.mindmapInfo p {
+  color: var(--color-text-muted);
+  margin: 0 0 1rem 0;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.feature {
+  font-size: 0.875rem;
+  color: var(--color-brand);
+}
+
+/* Search View */
+.searchView {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.searchHeader {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.searchForm {
+  margin-top: 1rem;
+}
+
+.searchInputGroup {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  background: var(--color-bg);
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  transition: border-color 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 2px rgba(124, 77, 255, 0.1);
+}
+
+.searchButton {
+  background: var(--color-brand);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  min-width: 60px;
+}
+
+.searchButton:hover {
+  background: #6b3acc;
+}
+
+.searchButton:disabled {
+  background: var(--color-text-muted);
+  cursor: not-allowed;
+}
+
+.searchResults {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(124, 77, 255, 0.1);
+  min-height: 400px;
+}
+
+.searchLoading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  gap: 1rem;
+}
+
+.loadingSpinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(124, 77, 255, 0.1);
+  border-top: 3px solid var(--color-brand);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.searchLoading p {
+  color: var(--color-text-muted);
+  font-size: 0.875rem;
+}
+
+.resultsContainer {
+  padding: 1.5rem;
+}
+
+.resultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.resultsHeader h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.resultCount {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.resultCard {
+  background: rgba(124, 77, 255, 0.05);
+  border-radius: var(--radius-md);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.resultContent {
+  margin-bottom: 1rem;
+}
+
+.resultText {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.resultMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.resultRelevance {
+  color: var(--color-brand);
+  font-weight: 500;
+}
+
+.resultActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.viewButton,
+.connectButton {
+  background: none;
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  color: var(--color-brand);
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.viewButton:hover,
+.connectButton:hover {
+  background: rgba(124, 77, 255, 0.1);
+}
+
+.searchEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.searchEmptyIcon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.searchEmpty h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0 0 0.5rem 0;
+}
+
+.searchEmpty p {
+  color: var(--color-text-muted);
+  margin: 0 0 2rem 0;
+}
+
+.searchFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.searchFeature {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.featureIcon {
+  font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .tabs {
+    padding: 0 1rem;
+    overflow-x: auto;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .noteCard {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .noteActions {
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .mindmapControls {
+    flex-wrap: wrap;
+  }
+
+  .searchInputGroup {
+    flex-direction: column;
+  }
+
+  .resultsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+/* TaskFlow Specific Styles */
+.taskflowCard {
+  border-left: 4px solid var(--color-brand);
+  background: linear-gradient(135deg, rgba(124, 77, 255, 0.02) 0%, rgba(124, 77, 255, 0.05) 100%);
+}
+
+.taskflowHeader {
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.taskflowTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.taskflowTitle h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.taskflowIcon {
+  font-size: 1.25rem;
+}
+
+.taskflowMeta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.taskStatus {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.status-todo {
+  background: rgba(156, 163, 175, 0.2);
+  color: #6b7280;
+}
+
+.status-in-progress {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+}
+
+.status-completed {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+.status-cancelled {
+  background: rgba(239, 68, 68, 0.2);
+  color: #ef4444;
+}
+
+.taskPriority {
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.priority-low {
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+}
+
+.priority-medium {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+}
+
+.priority-high {
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
+}
+
+.priority-critical {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+}
+
+.assignedAgent {
+  padding: 0.25rem 0.5rem;
+  background: rgba(124, 77, 255, 0.1);
+  color: var(--color-brand);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.subtasksList {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(124, 77, 255, 0.02);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(124, 77, 255, 0.1);
+}
+
+.subtasksList h4 {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.subtaskItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.25rem 0;
+}
+
+.subtaskItem:last-child {
+  margin-bottom: 0;
+}
+
+.subtaskItem input[type="checkbox"] {
+  margin: 0;
+  cursor: pointer;
+}
+
+.completedTask {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* TaskFlow specific responsive adjustments */
+@media (max-width: 768px) {
+  .taskflowMeta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+  
+  .subtasksList {
+    padding: 0.75rem;
+  }
+}
+
+/* Filter Controls */
+.filterControls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.filterSelect {
+  padding: 0.375rem 0.75rem;
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-text);
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.filterSelect:focus {
+  outline: none;
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 2px rgba(124, 77, 255, 0.2);
+}
+
+.tagFilters {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tagFilter {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(124, 77, 255, 0.2);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tagFilter:hover {
+  background: rgba(124, 77, 255, 0.1);
+}
+
+.tagFilterActive {
+  background: rgba(124, 77, 255, 0.2);
+  border-color: var(--color-brand);
+}
+
+.clearFilters {
+  padding: 0.25rem 0.5rem;
+  border: 1px solid rgba(239, 68, 68, 0.3);
+  border-radius: var(--radius-sm);
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clearFilters:hover {
+  background: rgba(239, 68, 68, 0.2);
+}

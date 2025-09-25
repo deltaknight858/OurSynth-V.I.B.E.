@@ -1,0 +1,3 @@
+.test-bg {
+  background: var(--test-bg, #fff);
+}

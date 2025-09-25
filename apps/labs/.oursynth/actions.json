@@ -1,0 +1,17 @@
+[
+  { "id": "list-actions", "label": "List Actions", "run": "pwsh ./tools/oai-wizard.ps1 actions", "group": "OAI Wizard" },
+  { "id": "invoke-scaffold-component", "label": "Invoke Scaffold Component", "run": "pwsh ./tools/oai-wizard.ps1 invoke -ActionId scaffold-component -Input @{ componentName='Card'; package='packages/halo-ui' }", "group": "OAI Wizard" },
+  { "id": "await-job-completion", "label": "Await Job Completion", "run": "pwsh ./tools/oai-wizard.ps1 await -InvocationId <id>", "group": "OAI Wizard" },
+  { "id": "harvest-artifacts", "label": "Harvest Artifacts", "run": "pwsh ./tools/oai-wizard.ps1 harvest -InvocationId <id>", "group": "OAI Wizard" },
+  { "id": "apply-patch", "label": "Apply Patch", "run": "pwsh ./tools/oai-wizard.ps1 apply -InvocationId <id>", "group": "OAI Wizard" },
+  { "id": "open-pr", "label": "Open PR", "run": "pwsh ./tools/oai-wizard.ps1 pr", "group": "OAI Wizard" },
+  { "id": "capture-emptystate-screenshot", "label": "Capture EmptyState Screenshot", "run": "pwsh ./scripts/capture-empty-state.ps1", "group": "Capture" },
+  { "id": "capture-ci", "label": "Capture (CI)", "run": "pnpm capture:emptystate:ci", "group": "Capture" },
+  { "id": "pack-capsule", "label": "Pack Capsule", "run": "pnpm os pack", "group": "Capsule" },
+  { "id": "preflight-check", "label": "Preflight Check", "run": "pnpm os preflight", "group": "Capsule" },
+  { "id": "replay-capsule", "label": "Replay Capsule", "run": "pnpm os replay --capsule <id>", "group": "Capsule" },
+  { "id": "export-provenance", "label": "Export Provenance", "run": "pnpm os export --capsule <id>", "group": "Capsule" },
+  { "id": "rename-sentient-to-oai", "label": "Rename SentientDeveloper → Oai", "run": "pwsh ./scripts/rename-sentient-to-oai.ps1", "group": "Refactor" },
+  { "id": "rename-gemini-to-oai", "label": "Rename Gemini → Oai", "run": "pwsh ./scripts/rename-gemini-to-oai.ps1", "group": "Refactor" },
+  { "id": "dry-run-refactor", "label": "Dry-Run Refactor", "run": "pwsh ./scripts/refactor-dry-run.ps1", "group": "Refactor" }
+]

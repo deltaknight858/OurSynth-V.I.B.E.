@@ -1,0 +1,6 @@
+/** Auto-generated from primitive-scroll-area-horizontal.svg. DO NOT EDIT DIRECTLY. */
+import * as React from 'react';
+export interface IconProps extends React.SVGProps<SVGSVGElement> { size?: number; title?: string; }
+export const PrimitiveScrollAreaHorizontal: React.FC<IconProps> = ({ size = 24, title = 'PrimitiveScrollAreaHorizontal', ...props }) => (
+  <svg role="img" width={size} height={size} aria-label={title} viewBox="0 0 220 120" fill="none" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="track-h" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0B0F14"/><stop offset="1" stop-color="#0B0F14" stop-opacity="0.8"/></linearGradient><linearGradient id="thumb-h" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6DE1FF"/><stop offset="1" stop-color="#8A5CFF"/></linearGradient></defs><!--Content viewport--><rect x="12" y="12" width="196" height="76" rx="12" fill="currentColor" stroke="#FFFFFF" stroke-opacity="0.08"/><!--Scroll track--><rect x="12" y="92" width="196" height="12" rx="6" fill="currentColor" opacity="0.8"/><!--Scroll thumb--><rect x="64" y="93.5" width="72" height="9" rx="4.5" fill="currentColor" opacity="0.9"/><!--Left/Right chevrons--><path d="M24 98 l4 -4 v8 z" fill="currentColor" opacity="0.9"/><path d="M196 98 l-4 -4 v8 z" fill="currentColor" opacity="0.9"/></svg>
+);

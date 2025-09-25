@@ -1,0 +1,109 @@
+/* OurSynth-Eco Global Theme — Halo UI */
+
+:root {
+  /* Core colors */
+  --eco-bg: #181c24;
+  --eco-bg-accent: #232b3a;
+  --eco-bg-hover: #2e3650;
+  --eco-fg: #e3e8f9;
+  --eco-fg-muted: #aeb8d4;
+  --eco-accent-blue: #4683ff;
+  --eco-accent-purple: #a27fff;
+  --eco-accent-yellow: #ffbc42;
+  --eco-accent-teal: #44dfb9;
+  --eco-accent-pink: #ff7fa2;
+  --eco-accent-orange: #ffb347;
+  --eco-accent-green: #7fffd4;
+  --eco-card-bg: #232b3a;
+  --eco-card-shadow: 0 2px 18px #10131b30;
+  --eco-btn-bg: #4683ff;
+  --eco-btn-bg-hover: #305fd8;
+  --eco-btn-shadow: 0 2px 8px #10131b22;
+  --eco-border: #2e3650;
+
+  /* Radii */
+  --eco-radius: 8px;
+  --eco-radius-xl: 16px;
+
+  /* Fonts */
+  --eco-font: 'Inter', 'Segoe UI', 'Arial', sans-serif;
+}
+
+body, html {
+  font-family: var(--eco-font);
+  background: var(--eco-bg);
+  color: var(--eco-fg);
+}
+
+a {
+  color: var(--eco-accent-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--eco-accent-purple);
+}
+
+/* Utility classes */
+.bg-eco { background: var(--eco-bg); }
+.bg-eco-accent { background: var(--eco-bg-accent); }
+.bg-eco-hover { background: var(--eco-bg-hover); }
+.text-eco { color: var(--eco-fg); }
+.text-eco-muted { color: var(--eco-fg-muted); }
+.rounded { border-radius: var(--eco-radius); }
+.rounded-xl { border-radius: var(--eco-radius-xl); }
+.shadow { box-shadow: var(--eco-card-shadow); }
+.shadow-lg { box-shadow: 0 8px 32px #10131b40; }
+
+.halo-card {
+  background: var(--eco-card-bg);
+  border-radius: var(--eco-radius-xl);
+  box-shadow: var(--eco-card-shadow);
+  padding: 1.5em;
+}
+
+.halo-btn {
+  background: var(--eco-btn-bg);
+  color: #fff;
+  border: none;
+  border-radius: var(--eco-radius);
+  padding: 0.5em 1.2em;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: var(--eco-btn-shadow);
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.halo-btn:hover {
+  background: var(--eco-btn-bg-hover);
+  box-shadow: 0 4px 16px #4683ff25;
+}
+
+.halo-icon {
+  margin-right: 0.5em;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+
+.sidebar-nav-item {
+  display: flex;
+  align-items: center;
+  min-height: 48px;
+  font-size: 1em;
+  color: var(--eco-fg-muted);
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.sidebar-nav-item.active,
+.sidebar-nav-item:hover {
+  background: var(--eco-bg-hover);
+  color: #fff;
+}
+
+@media (max-width: 800px) {
+  .shell-layout { flex-direction: column; }
+  .halo-sidebar { width: 100vw; min-width: 0; flex-direction: row; }
+  .shell-main { padding: 1em; }
+}

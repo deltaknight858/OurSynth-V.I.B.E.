@@ -70,6 +70,7 @@ export function MainNav() {
   return (
     <div className="flex items-center justify-between px-4 md:px-6 h-16">
       <div className="flex items-center gap-6">
+<<<<<<< HEAD
         <Link href="/" className="flex items-center space-x-3 group">
           <div className="flex items-center">
             <span className="text-2xl font-bold gradient-text animate-pulse-vibe group-hover:scale-105 transition-transform duration-300">
@@ -77,6 +78,10 @@ export function MainNav() {
             </span>
             <span className="ml-2 text-sm neon-cyan font-medium">Assist</span>
           </div>
+=======
+        <Link href="/" className="flex items-center space-x-2">
+          <span className="text-2xl font-bold">FASHN</span>
+>>>>>>> main
         </Link>
 
         <NavigationMenu>

@@ -1,0 +1,6 @@
+{
+  "name": "@oursynth/components-wizard",
+  "version": "1.0.0",
+  "main": "PathwaysWizard.tsx",
+  "license": "MIT"
+}

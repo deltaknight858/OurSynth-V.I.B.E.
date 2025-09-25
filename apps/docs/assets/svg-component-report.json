@@ -1,0 +1,82 @@
+{
+  "generatedAt": "2025-09-08T21:00:30.836Z",
+  "count": 19,
+  "items": [
+    {
+      "file": "command-center-icon.svg",
+      "component": "CommandCenterIcon"
+    },
+    {
+      "file": "glow-pulse-hover.svg",
+      "component": "GlowPulseHover"
+    },
+    {
+      "file": "history-icon.svg",
+      "component": "HistoryIcon"
+    },
+    {
+      "file": "home-icon.svg",
+      "component": "HomeIcon"
+    },
+    {
+      "file": "icon.svg",
+      "component": "Icon"
+    },
+    {
+      "file": "logo.svg",
+      "component": "Logo"
+    },
+    {
+      "file": "logomark-orbital-s.svg",
+      "component": "LogomarkOrbitalS"
+    },
+    {
+      "file": "particles-bg.svg",
+      "component": "ParticlesBg"
+    },
+    {
+      "file": "pathways-hero.svg",
+      "component": "PathwaysHero"
+    },
+    {
+      "file": "preview-icon.svg",
+      "component": "PreviewIcon"
+    },
+    {
+      "file": "primitive-button-glow.svg",
+      "component": "PrimitiveButtonGlow"
+    },
+    {
+      "file": "primitive-button-rise.svg",
+      "component": "PrimitiveButtonRise"
+    },
+    {
+      "file": "primitive-panel.svg",
+      "component": "PrimitivePanel"
+    },
+    {
+      "file": "primitive-scroll-area-horizontal.svg",
+      "component": "PrimitiveScrollAreaHorizontal"
+    },
+    {
+      "file": "primitive-scroll-area-vertical.svg",
+      "component": "PrimitiveScrollAreaVertical"
+    },
+    {
+      "file": "success-icon.svg",
+      "component": "SuccessIcon"
+    },
+    {
+      "file": "wizard-reveal.svg",
+      "component": "WizardReveal"
+    },
+    {
+      "file": "wordmark-placeholder.svg",
+      "component": "WordmarkPlaceholder"
+    },
+    {
+      "file": "workspace-icon.svg",
+      "component": "WorkspaceIcon"
+    }
+  ]
+}

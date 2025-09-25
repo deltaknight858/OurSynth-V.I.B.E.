@@ -1,6 +1,7 @@
 {
   "name": "@vibe/core-tokens",
   "version": "0.1.0",
+<<<<<<< HEAD
   "description": "Design tokens for the VIBE design system - colors, spacing, typography",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -21,3 +22,7 @@
     "access": "restricted"
   }
 }
+=======
+  "private": true
+}
+>>>>>>> main

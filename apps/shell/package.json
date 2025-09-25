@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "@vibe/shell",
   "version": "0.1.0",
   "description": "Core layout & navigation shell for VIBE applications",
@@ -21,3 +22,9 @@
     "typescript": "^5.0.0"
   }
 }
+=======
+  "name": "shell",
+  "version": "0.1.0",
+  "private": true
+}
+>>>>>>> main

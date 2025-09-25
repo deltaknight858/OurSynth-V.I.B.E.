@@ -1,0 +1,27 @@
+.root {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+}
+
+.viewport {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.scrollbar {
+  display: flex;
+  user-select: none;
+  touch-action: none;
+  padding: 2px;
+  transition: background 160ms ease-out;
+}
+
+.thumb {
+  flex: 1;
+  background: var(--neonCyan);
+  border-radius: 10px;
+  position: relative;
+}
