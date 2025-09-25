@@ -53,3 +53,6 @@ logs
 # Package manager lock files (keep package-lock.json but ignore others)
 yarn.lock
 pnpm-lock.yaml
+
+apps/assist/vertex-ai-credentials.json
+apps/assist/public/this-project-7450e-firebase-adminsdk-fbsvc-*.json
