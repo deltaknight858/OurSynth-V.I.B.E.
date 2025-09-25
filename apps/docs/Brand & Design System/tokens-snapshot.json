@@ -1,0 +1,141 @@
+{
+  "generated": "2025-09-08T01:01:57.578Z",
+  "tokens": {
+    "color-accent-cyan": {
+      "value": "#00FFFF",
+      "file": "styles\\globals.css"
+    },
+    "color-accent-danger": {
+      "value": "#FF3B30",
+      "file": "styles\\globals.css"
+    },
+    "color-accent-primary": {
+      "value": "#7B00FF",
+      "file": "styles\\globals.css"
+    },
+    "color-bg-base": {
+      "value": "#050507",
+      "file": "styles\\globals.css"
+    },
+    "color-bg-surface": {
+      "value": "#0E0E15",
+      "file": "styles\\globals.css"
+    },
+    "color-border-strong": {
+      "value": "rgba(255,255,255,0.16)",
+      "file": "styles\\globals.css"
+    },
+    "color-border-subtle": {
+      "value": "rgba(255,255,255,0.08)",
+      "file": "styles\\globals.css"
+    },
+    "color-text-dim": {
+      "value": "rgba(255,255,255,0.55)",
+      "file": "styles\\globals.css"
+    },
+    "color-text-primary": {
+      "value": "#FFFFFF",
+      "file": "styles\\globals.css"
+    },
+    "color-text-secondary": {
+      "value": "rgba(255,255,255,0.75)",
+      "file": "styles\\globals.css"
+    },
+    "font-size-2xl": {
+      "value": "1.5rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-3xl": {
+      "value": "1.875rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-4xl": {
+      "value": "2.25rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-5xl": {
+      "value": "3rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-lg": {
+      "value": "1.125rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-md": {
+      "value": "1rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-sm": {
+      "value": "0.875rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-xl": {
+      "value": "1.25rem",
+      "file": "styles\\globals.css"
+    },
+    "font-size-xs": {
+      "value": "0.75rem",
+      "file": "styles\\globals.css"
+    },
+    "halo-accent": {
+      "value": "var(--color-accent-cyan)",
+      "file": "styles\\globals.css"
+    },
+    "radius-lg": {
+      "value": "12px",
+      "file": "styles\\globals.css"
+    },
+    "radius-md": {
+      "value": "8px",
+      "file": "styles\\globals.css"
+    },
+    "radius-sm": {
+      "value": "4px",
+      "file": "styles\\globals.css"
+    },
+    "radius-xl": {
+      "value": "18px",
+      "file": "styles\\globals.css"
+    },
+    "radius-xs": {
+      "value": "2px",
+      "file": "styles\\globals.css"
+    },
+    "shadow-glow-accent": {
+      "value": "0 0 0 1px var(--color-accent-primary), 0 0 16px -2px var(--color-accent-primary)",
+      "file": "styles\\globals.css"
+    },
+    "shadow-md": {
+      "value": "0 4px 12px rgba(0,0,0,0.4)",
+      "file": "styles\\globals.css"
+    },
+    "shadow-sm": {
+      "value": "0 1px 2px rgba(0,0,0,0.4)",
+      "file": "styles\\globals.css"
+    },
+    "space-1": {
+      "value": "4px",
+      "file": "styles\\globals.css"
+    },
+    "space-2": {
+      "value": "8px",
+      "file": "styles\\globals.css"
+    },
+    "space-3": {
+      "value": "12px",
+      "file": "styles\\globals.css"
+    },
+    "space-4": {
+      "value": "16px",
+      "file": "styles\\globals.css"
+    },
+    "space-6": {
+      "value": "24px",
+      "file": "styles\\globals.css"
+    },
+    "space-8": {
+      "value": "32px",
+      "file": "styles\\globals.css"
+    }
+  }
+}

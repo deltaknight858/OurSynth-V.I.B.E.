@@ -1,4 +1,3 @@
-
 # Command Wheel Reference
 
 _Status: Living, authoritative_
@@ -231,4 +230,41 @@ flowchart TD
   classDef push fill:#60a5fa,stroke:#000,color:#000
   classDef center fill:#a78bfa,stroke:#000,color:#000
   classDef future fill:#f472b6,stroke:#000,color:#000
-  
+```
+
+---
+
+## 🚀 Command Wheel Revamp (2025)
+
+The Command Wheel is evolving to become the heartbeat of V.I.B.E., blending cinematic UI, agent orchestration, and contributor empowerment. Here’s what’s new and what’s next:
+
+### ✨ New Features & Golden Ideas
+
+- **Ambient Presence**: Agent Ball glows and animates based on agent activity, status, and provenance events.
+- **Context-Aware Actions**: Only relevant actions and agents appear, filtered by registry and user role.
+- **Dual Modes**: Cinematic wheel for contributors, raw console for developers and power users.
+- **Provenance Replay**: Timeline and diff view for agent invocations, accessible from the wheel or Developer Console.
+- **Customizable Spokes**: Contributors can rearrange, hide, or theme spokes based on their workflow.
+- **Registry Viewer**: Visual interface for actions.json and registry.json, showing active, deprecated, and experimental agents.
+- **Sandbox Spoke**: Dedicated spoke for experimental agents, panels, and workflows.
+- **Wheel Themes**: Neon, glass, retro, dark mode, and more—pick your vibe.
+
+### 🧭 Contributor Guidance
+
+- **Start in the Wheel**: All agent actions, file tools, and navigation begin here.
+- **Use the Console for Power Tasks**: Advanced contributors can invoke agents manually, inject JSON, and debug workflows.
+- **Replay Provenance**: Review, replay, and audit agent actions for trust and learning.
+- **Customize Your Experience**: Drag spokes, toggle visibility, and select themes to match your workflow.
+- **Explore the Registry**: See which agents are available, deprecated, or experimental—contribute new ones via registry.json.
+
+### 🗺️ Roadmap Highlights
+
+- **Agent Ball Developer Mode**: Visual feedback and debug info for agent state.
+- **Sandbox Spoke**: Safe space for testing new ideas without affecting production.
+- **Provenance Replay Tab**: Full timeline and diff view for agent actions.
+- **Registry Viewer**: Interactive explorer for agent/action registry.
+- **Wheel Customization**: Drag-and-drop spokes, toggle visibility, and theme selection.
+
+---
+
+**The Command Wheel is not just a menu—it’s the living interface, the pulse of V.I.B.E., and the launchpad for every contributor’s journey.**

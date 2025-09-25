@@ -1,150 +1,135 @@
-# OurSynth-Eco Documentation Index
+# OurSynth V.I.B.E. Documentation Index
 
-Welcome to the single source of truth for the OurSynth ecosystem. All canonical docs are organized by domain below. Each section links to related documents for easy navigation and cross-referencing.
+Welcome to the living documentation for the OurSynth V.I.B.E. ecosystem. This index maps all canonical docs, reference guides, and deep resources, so contributors always know where to start and where to find gold.
 
 ---
 
-## Brand System
+## 🏁 Start Here
 
-- [Brand Guidelines](./brand/BRAND_GUIDELINES.md)
-- [Theme System](./brand/THEME_SYSTEM.md)
-- [Brand System Overview](./brand/brand-system.md)
-- [Visual Token Sheet](./brand/VISUAL_TOKEN_SHEET.md)
+- [Intro & Manifesto](./intro.md)
+- [Naming Conventions](./naming.md)
+- [Contributor First Hour Guide](./first-hour.md)
+- [Glossary](./GLOSSARY.md)
+- [Quick Links Table](#quick-links)
 
-## Architecture
+---
 
+## 🧭 Platform & Architecture
+
+- [Platform Overview](./intro.md)
+- [Architecture](./architecture/ARCHITECTURE.md)
 - [Shell Layout](./architecture/SHELL_LAYOUT.md)
-- [Migration Guide](./architecture/migration-guide.md)
-- [Architecture Overview](./architecture/README.md)
-
-## Components
-
-- [Component Guidelines](./components/COMPONENT_GUIDELINES.md)
-- [Primitives](./components/primitives.md)
-
-## Workflows
-
-- [User Flow](./workflows/user-flow.md)
-- [User Flow Navigation](./workflows/user-flow-navigation.md)
-- [Promotion Pipeline](./workflows/promotion-pipeline.md)
-
-## Reference
-
-- [Glossary](./reference/GLOSSARY.md)
-- [Engineering Standards](./reference/STANDARDS.md)
-- [Command Wheel Reference](./reference/command-wheel-reference.md)
+- [Tech Stack](./architecture/tech-stack.md)
+- [Ecosystem Blueprint](./blueprint/oursynth-ecosystem-blueprint.md)
 
 ---
 
-### How to Use
+## 🖥️ Modules & Agents
 
-- Start with the Glossary for terminology.
-- Use Brand and Architecture docs for design and system rules.
-- Reference Component and Workflow docs for implementation and user journeys.
-- All docs are cross-linked and updated regularly. See "See Also" sections in each file for related topics.
+- [Module Overview](./module-overview.md) *(create if missing)*
+- [Agents Registry](./agents/AGENTS.md)
+- [Agent Architecture](./agents/agent-architecture.md)
+- [Agents Overview](./agents/agents-overview.md)
+- [Command Wheel Reference](./Modules & Agents/command-wheel-reference.md) — Full breakdown, roadmap, and revamp features
 
-_Last updated: September 24, 2025_
-_Status: Living, authoritative_
+---
 
+## 🎨 Brand & Design System
+
+- [Brand System](./brand-system.md)
+- [Brand Guidelines](./brand/BRAND_GUIDELINES.md)
+- [Theme System](./THEME_SYSTEM.md)
+- [Visual Token Sheet](./VISUAL_TOKEN_SHEET.md)
+- [Design System](./design-system/asset-strategy.md)
+- [Component Guidelines](./COMPONENT_GUIDELINES.md)
 - [Primitives](./components/primitives.md)
 - [Promotion Guidelines](./components/promotion-guidelines.md)
-- Agents
-  - [Overview](./agents/agents-overview.md)
-Architecture
-  - [Overview](./architecture/overview.md)
-  - [Tech Stack](./architecture/tech-stack.md)
 
-Assets
--[Asset Strategy](./assets/asset-strategy.md)
--[SVG Pipeline](./assets/svg-pipeline.md)
--[Asset Component Mapping](./ASSET_COMPONENT_MAPPING.md)
--[Brand Migration](./BRAND_MIGRATION.md)
+---
 
-Blueprints
--[Unified Blueprint](./blueprint/UnifiedBlueprint.md)
--[Ecosystem Blueprint](./ECOSYSTEM_BLUEPRINT.md)
--[Oursynth Ecosystem Blueprint](./oursynth-ecosystem-blueprint.md)
+## 🗂️ Assets & SVGs
 
-Capsules
--[Capsules Guide](./CAPSULES.md)
-0- [Capsules Folder](./capsules/README.md)
+- [Asset Strategy](./assets/asset-strategy.md)
+- [Asset Component Mapping](./assets/ASSET_COMPONENT_MAPPING.md)
+- [SVG Pipeline](./assets/svg-pipeline.md)
+- [SVG Catalog](./svg-catalog/svg-catalog.md)
+- [Icon Checklist](./assets/ICON_CHECKLIST.md)
 
-CI/CD & Standards
--[CI/CD Pipeline](./CI_CD.md)
--[Engineering Standards](./STANDARDS.md)
--[Copilot Guide](./COPILOT_GUIDE.md)
--[Gemini Guide](./GEMINI_GUIDE.md)
+---
 
-Commerce & Monetization
--[Commerce Hub](./COMMERCE_HUB.md)
+## 🧩 Capsules
 
-Design System
--[Tokens](./design-system/tokens.md)
--[Branding](./design-system/branding.md)
--[Design System Folder](./design-system/)
+- [Capsules Overview](./capsules/CAPSULES.md)
+- [Wizard Capsule](./capsules/WIZARD_CAPSULE.md)
+- [Copilot Instructions](./capsules/COPILOT_INSTRUCTIONS.md)
+- [Capsule Branding Guide](./capsules/BRANDING_GUIDE.md)
 
-Docs & Internal
--[Core Overview](./CORE_OVERVIEW.md)
--[Migration Checklist](./MIGRATION_CHECKLIST.md)
--[Migration Notes](./MIGRATION_NOTES.md)
--[Import Staging Audit](./import-staging-audit.md)
--[Onboarding](./ONBOARDING.md)
--[Sections Overview](./SECTIONS.md)
+---
 
-Generated
--[Generated Folder](./generated/)
+## 🚦 Workflows & User Journeys
 
-Imported
--[Imported Folder](./imported/)
+- [User Flow Navigation](./user-flow-navigation.md)
+- [User Flow](./user-flow.md)
+- [Promotion Pipeline](./workflows/promotion-pipeline.md)
+- [Domains & Connect](./workflows/domains-and-connect.md)
 
-Oursynth Shell
--[Oursynth Shell Folder](./oursynth-shell/)
+---
 
-Reproduction
--[Full Rebuild Steps](./reproduction/rebuild-steps.md)
+## 🛠️ Engineering & Contributor Guides
 
-Roadmap
--[Phase 2 Plan](./roadmap/PHASE2_PLAN.md)
+- [Engineering Standards](./STANDARDS.md)
+- [Contributing Guide](./contributing.md)
+- [CI/CD Guide](./internal/CI_CD.md)
+- [Copilot Prompt Library](./copilot-prompts.md)
+- [First Hour Guide](./first-hour.md)
+- [Milestones](./diagrams/milestones.md) *(create if missing)*
 
-Workflows
--[User Flow](./workflows/user-flow.md)
--[Promotion Pipeline](./workflows/promotion-pipeline.md)
--[Domains and Connect](./workflows/domains-and-connect.md)
+---
 
-Other Key Docs
--[Theme System](./THEME_SYSTEM.md)
--[Time Travel](./TIME_TRAVEL.md)
--[User Flows](./USER_FLOWS.md)
+## 💡 Business, Monetization & Cloud
 
-> For additional docs, see the `docs/` folder and subfolders for more granular guides and references.
+- [Commerce Hub](./COMMERCE_HUB.md)
+- [Monetization Roadmap](./internal/monetization-roadmap.md)
+- [Google Cloud Positioning](./GOOGLE_CLOUD_POSITIONING.md)
+- [Launch Demo Script](./LAUNCH_DEMO_SCRIPT.md)
 
-## Canonical Rules
+---
 
-1. Nothing enters `labs/` without a promotion script run.
-2. No hard-coded design values: only tokens.
-3. SVGs must be optimized & registered.
-4. Agents interactions must log provenance events.
-5. All new primitives documented here first.
+## 📊 Diagrams & Visuals
 
-## Status Tags
+- [Repo Map](./diagrams/repo-map.md) — Most current architecture overview
+- [Top-Level Navigation](./diagrams/top-level-nav.md) — Latest user journey flow
+- [Domains + Deploy Flow](./diagrams/domains-deploy.md) — Updated infrastructure pipeline
+- [End-to-End Lifecycle](./diagrams/end-to-end-lifecycle.md) — Full ecosystem journey
+- [Command Wheel Diagram](./diagrams/command-wheel-reference.md) — Latest command center and roadmap
+- [Milestones](./diagrams/milestones.md) — Contributor progression (if available)
 
-`PLANNED` · `IN-PROGRESS` · `MVP` · `STABLE` · `DEPRECATED`
+---
 
-## Quick Start (Developer)
+## 🗄️ Archive & Deep Reference
 
-1. Read the [Blueprint](./blueprint/UnifiedBlueprint.md)
-2. Run environment bootstrap (see root README)
-3. Run `npm run staging:inventory` before large promotions.
-4. Implement feature in staging → promote via script (planned: `scripts/promote.mjs`).
-5. Update docs before merging.
+- [Migration Guide](./migration-guide.md) *(archive if not actionable)*
+- [Generated Files](./generated/) *(dev-only or archive)*
+- [Debug Logs](./debug.log) *(archive)*
 
-## Imported legacy docs
+---
 
-These source documents were imported for historical context and migration. Prefer the canonical docs above.
+## Quick Links
 
-- Labs-1: Unified Layout Implementation Blueprint → `./imported/labs-1/unified-blueprints.instructions.md` (imported)
-- Labs-2: Unified Layout Implementation Blueprint → `./imported/labs-2/unified-blueprints.instructions.md` (imported)
-- Theme prompts → `./imported/labs-1/copilot.themecreation.instructions.md` and `./imported/labs-2/copilot.themecreation.instructions.md` (imported)
-- Capsule Wizard: Copilot Instructions → `./imported/COPILOT_INSTRUCTIONS.md` (normalized)
-- Capsule Wizard: Wizard Capsule Sample → `./imported/WIZARD_CAPSULE.md` (normalized)
-- Commerce & Monetization Hub → `./imported/MONETIZATION_BLUEPRINTS.md` (normalized)
+| Guide                      | Purpose                                      |
+|----------------------------|----------------------------------------------|
+| Intro & Manifesto          | Philosophy and platform overview             |
+| Naming Conventions         | Brand, shell, and module naming rules        |
+| Contributor First Hour     | Step-by-step onboarding                      |
+| Copilot Prompt Library     | Scaffolding, refactoring, testing, docs      |
+| Diagrams                   | Visual flows, repo map, lifecycle, command wheel |
+| Glossary                   | Definitions of modules, agents, workflows    |
+
+---
+
+_Last updated: September 25, 2025_  
+_Status: Living, authoritative_
+
+---
+
+**Next step:** I can generate a Mermaid “docs map” diagram showing these relationships visually. Let me know if you want it now or want to review this README index first!
