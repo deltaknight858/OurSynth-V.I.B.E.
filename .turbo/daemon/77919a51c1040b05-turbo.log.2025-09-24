@@ -1,0 +1,346 @@
+2025-09-24T06:00:06.620597Z  WARN build:resolve_lockfile: turborepo_repository::package_graph::builder: Issues occurred when constructing package graph. Turbo will function, but some features may not be available: could not resolve workspaces: io error: The system cannot find the file specified. (os error 2)
+2025-09-24T06:00:06.827054Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-09-24T06:00:21.234767Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\dist")}
+2025-09-24T06:00:21.235196Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:00:21.435674Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T06:00:21.435694Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:00:22.221630Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\dist")}
+2025-09-24T06:00:22.221690Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:00:22.441080Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\dist")}
+2025-09-24T06:00:22.441093Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:00:22.857040Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui")}
+2025-09-24T06:00:22.857054Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:00:23.258939Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo")}
+2025-09-24T06:00:23.258961Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:00:25.262891Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:00:25.263759Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:00:25.936030Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:00:25.936054Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:00:27.149601Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:00:27.149672Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:00:27.767875Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:00:27.767898Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:26:43.283378Z  WARN build:resolve_lockfile: turborepo_repository::package_graph::builder: Issues occurred when constructing package graph. Turbo will function, but some features may not be available: could not resolve workspaces: io error: The system cannot find the file specified. (os error 2)
+2025-09-24T06:26:43.572389Z  WARN daemon_server: turborepo_lib::commands::daemon: daemon already running
+2025-09-24T06:26:57.995273Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell\\.next")}
+2025-09-24T06:26:57.995848Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:26:58.111055Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell")}
+2025-09-24T06:26:58.111068Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:26:58.216900Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell\\.next")}
+2025-09-24T06:26:58.216916Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:26:58.800091Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(".turbo")}
+2025-09-24T06:26:58.800153Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:27:00.993317Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:27:00.993343Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:27:03.328826Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:27:03.328905Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:27:03.329201Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:27:03.329209Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:27:04.118437Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:27:04.118615Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:31:30.300807Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\src\\pages\\assist\\index.tsx")}
+2025-09-24T06:31:30.300910Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:11.240436Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\tsconfig.json")}
+2025-09-24T06:32:11.240489Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:30.806518Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\tsconfig.json")}
+2025-09-24T06:32:30.806635Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:54.622595Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\tsconfig.json")}
+2025-09-24T06:32:54.622625Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:54.742269Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:32:54.742289Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:57.095131Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:32:57.095154Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:32:58.416535Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\.next")}
+2025-09-24T06:32:58.416774Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T06:42:29.303047Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell\\src\\AppShell.tsx")}
+2025-09-24T06:42:29.303138Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:42:49.696574Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell\\src\\AppShell.tsx")}
+2025-09-24T06:42:49.696611Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:42:49.796507Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\shell\\src\\AppShell.tsx")}
+2025-09-24T06:42:49.796526Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/shell"), path: AnchoredSystemPathBuf("apps\\shell") }}))
+2025-09-24T06:44:06.903712Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\node_modules")}
+2025-09-24T06:44:06.903754Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:07.513236Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui")}
+2025-09-24T06:44:07.513268Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:09.392692Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\package.json")}
+2025-09-24T06:44:09.392717Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:09.509628Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\node_modules"), AnchoredSystemPathBuf("packages\\halo-ui"), AnchoredSystemPathBuf("packages\\halo-ui\\package-lock.json"), AnchoredSystemPathBuf("packages\\halo-ui\\package.json")}
+2025-09-24T06:44:09.518045Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:11.111491Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\node_modules")}
+2025-09-24T06:44:11.111524Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:31.802726Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\package-lock.json")}
+2025-09-24T06:44:31.802773Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:42.406415Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\package-lock.json")}
+2025-09-24T06:44:42.406447Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T06:44:54.115234Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\node_modules")}
+2025-09-24T06:44:54.115257Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:44:54.591232Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T06:44:54.591258Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:44:55.095057Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\node_modules"), AnchoredSystemPathBuf("packages\\core-tokens\\package-lock.json"), AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T06:44:55.095139Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:46:09.498066Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("tokens")}
+2025-09-24T06:46:09.498091Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:46:30.603032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tokens\\README.md"), AnchoredSystemPathBuf("tokens"), AnchoredSystemPathBuf("tokens\\tokens.json")}
+2025-09-24T06:46:30.603056Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:46:31.198173Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tokens")}
+2025-09-24T06:46:31.198207Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:46:35.105879Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("tokens")}
+2025-09-24T06:46:35.105902Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:49:44.894923Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("styles")}
+2025-09-24T06:49:44.894972Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:51:26.997457Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("styles\\globals.css")}
+2025-09-24T06:51:26.997502Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:51:27.413049Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("styles")}
+2025-09-24T06:51:27.413110Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:52:08.602936Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("styles\\globals.css")}
+2025-09-24T06:52:08.603025Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T06:53:37.620226Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:53:37.620312Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:53:46.141889Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:53:46.142064Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:53:46.408149Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:53:46.408371Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:53:57.902536Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\tokens.json")}
+2025-09-24T06:53:57.902623Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:53:58.003594Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\tokens.json")}
+2025-09-24T06:53:58.003622Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:54:13.605161Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\tokens.json")}
+2025-09-24T06:54:13.605178Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:54:18.103782Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\dist")}
+2025-09-24T06:54:18.103809Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:54:37.795104Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:54:37.795129Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:54:46.406608Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:54:46.406687Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:54:46.511565Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:54:46.511632Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:58:26.199020Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:58:26.199059Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T06:58:26.298825Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T06:58:26.298874Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:00:06.900759Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\package.json")}
+2025-09-24T07:00:06.900800Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T07:00:17.906844Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\package.json")}
+2025-09-24T07:00:17.906883Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T07:01:27.898943Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_14920_c9caa6b19949f6538a339d88ff31b940")}
+2025-09-24T07:01:27.898984Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:28.001510Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\node_modules"), AnchoredSystemPathBuf("_tmp_14920_c9caa6b19949f6538a339d88ff31b940"), AnchoredSystemPathBuf("packages\\halo-ui\\node_modules"), AnchoredSystemPathBuf("apps\\assist\\node_modules"), AnchoredSystemPathBuf("")}
+2025-09-24T07:01:28.003391Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }, WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:01:28.104244Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules"), AnchoredSystemPathBuf("packages\\halo-ui\\node_modules")}
+2025-09-24T07:01:28.104318Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }, WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.019719Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.019740Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.104036Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules"), AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.104060Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:29.206735Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.206771Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.308595Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.308617Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.411451Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules"), AnchoredSystemPathBuf("node_modules")}
+2025-09-24T07:01:29.411465Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }, WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:29.506245Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.506259Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.597531Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.597544Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.717519Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules"), AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:29.717691Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }, WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:01:29.902528Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-09-24T07:01:29.902592Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:30.000833Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-09-24T07:01:30.000858Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:30.307102Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-09-24T07:01:30.307127Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:01:30.497789Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\assist\\node_modules")}
+2025-09-24T07:01:30.497820Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/assist"), path: AnchoredSystemPathBuf("apps\\assist") }}))
+2025-09-24T07:04:54.204067Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_34004_ff94955504f9770e2bd9dad48628c8d3")}
+2025-09-24T07:04:54.204117Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:04:54.311083Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("")}
+2025-09-24T07:04:54.311146Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({}))
+2025-09-24T07:09:53.206305Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_40992_49e58f88ef6fc12cb1b74ce977db2133"), AnchoredSystemPathBuf("")}
+2025-09-24T07:09:53.206384Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:13:20.012640Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\tokens.json")}
+2025-09-24T07:13:20.012749Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:13:20.916006Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:13:20.916065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:16.904520Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\node_modules")}
+2025-09-24T07:15:16.904563Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:37.607593Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\dist")}
+2025-09-24T07:15:37.607619Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:38.019038Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:38.019060Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:38.210559Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\node_modules"), AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:38.210614Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:38.969277Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:15:38.969296Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:39.227315Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:39.227329Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:40.073210Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:40.073232Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:40.681874Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\package-lock.json")}
+2025-09-24T07:15:40.681898Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:40.761052Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:40.761065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:42.700061Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\package.json")}
+2025-09-24T07:15:42.700440Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:43.164950Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:43.164963Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:43.280882Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\tsconfig.json")}
+2025-09-24T07:15:43.280895Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:15:43.831858Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:15:43.831882Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:17:53.419399Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\hooks.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:17:53.419433Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:17:53.623511Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\hooks.ts")}
+2025-09-24T07:17:53.625361Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:17:53.913495Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:17:53.913519Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:17:54.005272Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:17:54.005292Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:01.413449Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens"), AnchoredSystemPathBuf("packages\\core-tokens\\README.md")}
+2025-09-24T07:18:01.413570Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:01.611670Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\README.md")}
+2025-09-24T07:18:01.611733Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:01.811501Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens")}
+2025-09-24T07:18:01.811579Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:12.413339Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens"), AnchoredSystemPathBuf("packages\\core-tokens\\package.json")}
+2025-09-24T07:18:12.413395Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:12.607219Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\package.json")}
+2025-09-24T07:18:12.607295Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:25.510491Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:25.510595Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:26.005616Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:18:26.005635Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:30.114434Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state")}
+2025-09-24T07:18:30.114471Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:30.617929Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:18:30.617952Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:34.108860Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules")}
+2025-09-24T07:18:34.108884Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:34.705994Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:34.706033Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:39.006668Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib")}
+2025-09-24T07:18:39.006692Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:39.506536Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:39.506557Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:43.517504Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store")}
+2025-09-24T07:18:43.517525Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:44.017757Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:44.017792Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:49.623129Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system")}
+2025-09-24T07:18:49.623156Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:50.112219Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:50.112248Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:54.908888Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard")}
+2025-09-24T07:18:54.908908Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:55.412319Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components")}
+2025-09-24T07:18:55.412343Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:58.820029Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent")}
+2025-09-24T07:18:58.820051Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:18:59.318370Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state")}
+2025-09-24T07:18:59.318419Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:05.717108Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\MeshCapsules.tsx")}
+2025-09-24T07:19:05.717168Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:05.823242Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules")}
+2025-09-24T07:19:05.823308Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:05.905086Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\MeshCapsules.tsx")}
+2025-09-24T07:19:05.905149Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:06.116547Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules")}
+2025-09-24T07:19:06.116567Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:12.425551Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\TimeMachine.tsx")}
+2025-09-24T07:19:12.425580Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:12.535788Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules")}
+2025-09-24T07:19:12.541574Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:12.607555Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\TimeMachine.tsx")}
+2025-09-24T07:19:12.607579Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:20.405214Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib\\useOAIEvents.ts")}
+2025-09-24T07:19:20.405236Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:20.519332Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib")}
+2025-09-24T07:19:20.519414Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:20.604863Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib\\useOAIEvents.ts")}
+2025-09-24T07:19:20.604886Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:20.812880Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib")}
+2025-09-24T07:19:20.812935Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:27.228777Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store\\GenerateWithPathways.tsx")}
+2025-09-24T07:19:27.228841Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:27.412966Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store\\GenerateWithPathways.tsx")}
+2025-09-24T07:19:27.412988Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:28.010475Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store")}
+2025-09-24T07:19:28.010501Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:33.646689Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system\\HaloButton.tsx")}
+2025-09-24T07:19:33.646713Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:33.730785Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system\\HaloButton.tsx")}
+2025-09-24T07:19:33.730800Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:34.308039Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system")}
+2025-09-24T07:19:34.308065Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:40.704967Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard\\DiffViewer.tsx")}
+2025-09-24T07:19:40.704988Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:40.816807Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard")}
+2025-09-24T07:19:40.816849Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:40.911422Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard\\DiffViewer.tsx")}
+2025-09-24T07:19:40.911512Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:41.113975Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard")}
+2025-09-24T07:19:41.114001Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:47.043044Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent\\agentSessionStore.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent")}
+2025-09-24T07:19:47.043106Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:47.108190Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent\\agentSessionStore.ts")}
+2025-09-24T07:19:47.108233Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:19:47.316712Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent")}
+2025-09-24T07:19:47.316734Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:20:27.018393Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\README.md"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\MeshCapsules.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\lib\\useOAIEvents.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\store\\GenerateWithPathways.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\hooks.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\system\\HaloButton.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\wizard\\DiffViewer.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\TimeMachine.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\package.json")}
+2025-09-24T07:20:27.018713Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:20:27.113174Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent\\agentSessionStore.ts")}
+2025-09-24T07:20:27.113200Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:17.117153Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\halo-ui-proxy.ts")}
+2025-09-24T07:26:17.117191Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:17.216034Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:26:17.216053Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:17.327854Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\halo-ui-proxy.ts")}
+2025-09-24T07:26:17.327867Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:26.219131Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src")}
+2025-09-24T07:26:26.219232Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:26.418006Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts")}
+2025-09-24T07:26:26.418088Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:48.323032Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent\\agentSessionStore.ts")}
+2025-09-24T07:26:48.323055Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:26:58.719370Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\MeshCapsules.tsx")}
+2025-09-24T07:26:58.719431Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:27:24.410509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\TimeMachine.tsx")}
+2025-09-24T07:27:24.410588Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:28:31.612067Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("_tmp_44816_6e6be8998025dcacfa8de9feb0b0b0d3"), AnchoredSystemPathBuf("")}
+2025-09-24T07:28:31.612107Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:48:25.829986Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf(""), AnchoredSystemPathBuf("_tmp_9324_62d256f11486f05c5f2059cf28b5be82")}
+2025-09-24T07:48:25.830040Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T07:55:38.521097Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\src\\halo-ui-proxy.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\TimeMachine.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\components\\capsules\\MeshCapsules.tsx"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\index.ts"), AnchoredSystemPathBuf("packages\\core-tokens\\src\\state\\agent\\agentSessionStore.ts")}
+2025-09-24T07:55:38.521135Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/core-tokens"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T07:56:05.919015Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-09-24T07:56:05.919042Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-24T07:56:06.093098Z  WARN build:resolve_lockfile: turborepo_repository::package_graph::builder: Issues occurred when constructing package graph. Turbo will function, but some features may not be available: could not resolve workspaces: io error: The system cannot find the file specified. (os error 2)
+2025-09-24T07:56:20.924359Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-09-24T07:56:20.924410Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-09-24T07:56:20.944044Z  WARN build:resolve_lockfile: turborepo_repository::package_graph::builder: Issues occurred when constructing package graph. Turbo will function, but some features may not be available: could not resolve workspaces: io error: The system cannot find the file specified. (os error 2)
+2025-09-24T07:56:23.222268Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\node_modules")}
+2025-09-24T07:56:23.222414Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T07:56:23.421555Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui\\node_modules")}
+2025-09-24T07:56:23.421586Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T07:56:23.525003Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\halo-ui")}
+2025-09-24T07:56:23.525062Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@vibe/halo-ui"), path: AnchoredSystemPathBuf("packages\\halo-ui") }}))
+2025-09-24T08:00:41.220274Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("packages\\core-tokens\\package.json")}
+2025-09-24T08:00:41.220313Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@oursynth/core"), path: AnchoredSystemPathBuf("packages\\core-tokens") }}))
+2025-09-24T08:02:46.127767Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-09-24T08:02:46.127874Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T08:10:29.353190Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package-lock.json")}
+2025-09-24T08:10:29.353240Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T08:10:30.625130Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package-lock.json")}
+2025-09-24T08:10:30.625214Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T08:10:32.527325Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-09-24T08:10:32.527348Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T10:04:18.696471Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\docs\\command-wheel-reference.md")}
+2025-09-24T10:04:18.702198Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T10:04:19.384283Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\docs")}
+2025-09-24T10:04:19.384316Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T10:06:24.786742Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\docs\\command-wheel-reference.md")}
+2025-09-24T10:06:24.786778Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T10:06:24.886509Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\docs\\command-wheel-reference.md")}
+2025-09-24T10:06:24.886529Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-09-24T10:32:03.203886Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\docs\\command-wheel-reference.md")}
+2025-09-24T10:32:03.204015Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))

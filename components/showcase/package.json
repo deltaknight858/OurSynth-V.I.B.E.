@@ -1,0 +1,6 @@
+{
+  "name": "@oursynth/components-showcase",
+  "version": "1.0.0",
+  "main": "ComponentShowcase.tsx",
+  "license": "MIT"
+}

@@ -1,0 +1,6 @@
+{
+  "name": "@oursynth/components-theme",
+  "version": "1.0.0",
+  "main": "AppThemeProvider.tsx",
+  "license": "MIT"
+}

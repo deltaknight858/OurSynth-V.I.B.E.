@@ -1,0 +1,6 @@
+{
+  "name": "@oursynth/components-ui",
+  "version": "1.0.0",
+  "main": "Button.tsx",
+  "license": "MIT"
+}
