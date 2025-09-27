@@ -1,0 +1,111 @@
+/* WizardStream Modal Theming: OurSynth Brand Colors */
+.wizardstream-backdrop {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(11, 11, 15, 0.85);
+  backdrop-filter: blur(8px) brightness(0.9);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wizardstream-modal {
+  background: linear-gradient(120deg, var(--color-accent-cyan, #00F5FF) 0%, var(--color-accent-purple, #7B00FF) 100%);
+  box-shadow: 0 8px 32px rgba(123,0,255,0.25), 0 1.5px 0 #00F5FF inset;
+  border-radius: 24px;
+  padding: 2rem 2.5rem;
+  min-width: 340px;
+  max-width: 480px;
+  color: #fff;
+  font-family: var(--font-primary, 'Orbitron', 'Eurostile', sans-serif);
+  position: relative;
+  animation: wizardstream-fadein 0.5s cubic-bezier(.4,2,.3,1) both;
+}
+
+@keyframes wizardstream-fadein {
+  from { opacity: 0; transform: scale(0.96); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.wizardstream-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.2rem;
+}
+.wizardstream-header h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--color-accent-purple, #7B00FF);
+  text-shadow: 0 0 8px #7B00FF44;
+}
+.wizardstream-header button {
+  background: none;
+  border: none;
+  color: var(--color-accent-cyan, #00F5FF);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.wizardstream-header button:hover {
+  color: #fff;
+}
+
+.wizardstream-content {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.wizardstream-svg {
+  background: rgba(18,18,26,0.7);
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px var(--color-accent-purple, #7B00FF) inset;
+  padding: 1rem;
+  margin: 0 auto;
+  display: inline-block;
+}
+.wizardstream-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.2rem;
+}
+.wizardstream-footer button {
+  background: linear-gradient(90deg, var(--color-accent-cyan, #00F5FF), var(--color-accent-purple, #7B00FF));
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #7B00FF33;
+  transition: background 0.2s;
+}
+.wizardstream-footer button:hover {
+  background: linear-gradient(90deg, #7B00FF, #00F5FF);
+}
+.wizardstream-editor {
+  margin-top: 1.5rem;
+  background: rgba(18,18,26,0.85);
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px var(--color-accent-cyan, #00F5FF) inset;
+  padding: 1rem;
+}
+.wizardstream-editor textarea {
+  width: 100%;
+  min-height: 120px;
+  background: #12121A;
+  color: #fff;
+  border: 1.5px solid var(--color-accent-purple, #7B00FF);
+  border-radius: 8px;
+  font-family: var(--font-secondary, 'Inter', sans-serif);
+  font-size: 1rem;
+  padding: 0.7rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 0 1px #00F5FF inset;
+  resize: vertical;
+}
+.wizardstream-editor textarea:focus {
+  outline: 2px solid var(--color-accent-cyan, #00F5FF);
+}

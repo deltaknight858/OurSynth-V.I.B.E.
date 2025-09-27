@@ -19,7 +19,7 @@
   "include": [
     "apps/**/*",
     "packages/**/*"
-  ],
+, "modules/domain"  ],
   "exclude": [
     "node_modules",
     "dist",

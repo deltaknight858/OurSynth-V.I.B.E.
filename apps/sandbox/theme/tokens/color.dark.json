@@ -1,0 +1,14 @@
+{
+  "color.surface.base": "#0b0b10",
+  "color.surface.raised": "#14141d",
+  "color.surface.inset": "#08080c",
+  "color.border.subtle": "#1f1f29",
+  "color.border.focus": "#7b00ff",
+  "color.accent.primary": "#7b00ff",
+  "color.accent.glow": "#b366ff",
+  "color.text.primary": "#f5f6fa",
+  "color.text.secondary": "#b1b5c3",
+  "color.state.success": "#38c993",
+  "color.state.warn": "#f5b342",
+  "color.state.error": "#ff4d61"
+}
